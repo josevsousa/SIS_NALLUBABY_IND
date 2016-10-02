@@ -1,0 +1,42 @@
+body{
+	padding-top: 2px !important;
+}
+@media only print
+	{
+	  /*  body * { display: none !important; }
+	    body:after { content: "Don't waste paper!"; }*/
+/*	    td, th, .headerPrint {
+    		
+		}
+	    .btPrint, #nav_home, .btVolt, .alert-dismissable, .footer, #socialdrawer,#enviarEmail {display:none !important;}
+	    .logoP {display:block !important;} 
+	    .end{display:block !important;}
+	    td, th, .headerPrint{
+			padding: 2px 8px !important;
+			border: 1px solid #000 !important;
+		}
+		#printLink{display:none;}*/
+	}
+
+.logo_print {
+    /*text-align: center;*/
+}
+
+.row.featured {
+    padding: 7px;
+}
+.featured h3 {
+    text-align: center;
+}   
+.featured_logo img {
+    float: left;
+    margin: 0 16px 0 15px;
+    border-radius: 4px;
+}
+.print_model_romaneio{
+
+}
+.print_model_romaneio td, th {
+    padding: 1px 8px !important;
+    font-size: smaller;
+}

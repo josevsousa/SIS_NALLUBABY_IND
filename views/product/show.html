@@ -1,0 +1,44 @@
+{{extend 'layout_1.html'}}
+
+{{block head}}
+<style>
+	.form_style_1{
+		padding: 58px 50px 0 0;
+	}
+	.jumbotron{
+		padding: 0px
+	}
+	#no_table_pid__row{
+		display: none
+	}
+</style>
+{{end}}
+
+
+{{block featured}}
+ <div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<h1>{{=product.name}}</h1>
+		</div>
+	</div>
+</div>		
+{{end}}
+{{block main}}
+<div class="container">	
+	<div class="">
+		<!-- ver porque não vai aceita o args -->
+		{{if product.picture:}}
+		<img src="{{=URL('home','download',args=product.picture)}}" alt="">
+		{{else:}}
+		<img src="http://placehold.it/150x150">
+		{{pass}}
+	</div>
+	<div>
+		{{=format_price(product.unit_price)}}
+	</div>
+	<div>
+		{{=form}}
+	</div>
+</div>
+{{end}}

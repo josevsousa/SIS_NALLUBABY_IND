@@ -1,0 +1,44 @@
+body{
+	padding-top: 2px !important;
+}
+
+.logo {
+	width: 30%;
+    float: left;
+    text-align: center;
+    padding-top: 33px;
+}
+.titulo {
+    float: left;
+    text-align: center;
+    width: 70%;
+    font-size: small;
+}
+.print_model_romaneio td, th {
+    padding: 3px 8px !important;
+    font-size: smaller;
+}
+th.tit_1 {
+    font-family: monospace;
+    width: 153px;
+}
+.table {
+    margin-bottom: 6px;
+}
+.end {
+    text-align: center;
+}
+@media only print
+    {
+       /*  body * { display: none !important; }
+        body:after { content: "Don't waste paper!"; }*/
+        .print{display:none !important;}
+        .end{display: block !important;}
+        table tbody tr td, table thead tr th {
+            border: 1px solid #505050 !important;
+        }
+    }
+
+.container.print {
+    margin-top: 35px;
+}    

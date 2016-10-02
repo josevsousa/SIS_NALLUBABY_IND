@@ -1,0 +1,132 @@
+clientes.id,clientes.tipo,clientes.nome,clientes.apelido,clientes.celular,clientes.operadora,clientes.fixo,clientes.email,clientes.cnpj_cpf,clientes.insc,clientes.cep,clientes.endereco,clientes.numero,clientes.uf,clientes.cidade,clientes.bairro,clientes.dataGravado,clientes.foto_cliente
+30,Pessoa_jurídica,Francimeire,,(22) 22222-2222, - ,(84) 3272-5915,baby-encanto@hotmail.com,00841115000109,200732080,59140.290,Rua Edgar Dantas,0,RN,Parnamirim,Centro,2016-04-02 10:24:55,
+276,Pessoa_jurídica,Abimael Sammy da Silva Araujo,,(83)9933-0234,,,simalia93@outlook.com,19329076000193,,58175000,Travessa Marechal Deodoro da Foncesca,s/n,PB,Cuite,centro,2016-04-02 15:47:43,<NULL>
+277,Pessoa_jurídica,Alternativa Couro,Carol Baby,<NULL>,OI,(79) 0000-0000,alternativacoruripe@hotmail.com,03065523000295,241.055.954,57230.970,R-Lindolfo Simoes,273,AL,Coruripe,centro,2016-04-02 15:47:43,
+278,Pessoa_jurídica,Art baby móveis E enxoais ltda,<NULL>,<NULL>, - ,<NULL>,marcosfruvia@hotmail.com,19840704000109,<NULL>,56903.415,Praça Sérgio Magalhães,66,PE,Serra Talhada,Nossa Senhora da Penha,2016-04-02 15:47:43,
+279,Pessoa_jurídica,Baby Shop conf. infantil ltda,baby shop,<NULL>, - ,(79) 3213-7229,<NULL>,02579744000138,270.966.080,49010.000,Tv Baltazar Goes,76,SE,Aracaju,Centro,2016-04-02 15:47:43,
+280,Pessoa_jurídica,Barbosa & Alves,Baby Mamy,(00) 00000-0000,OI,(82) 3623-1727,teste@teste.com,05607854000154,246.005.645,<NULL>,Rua do Comércio,156,AL,Olho dá gua das Flores,Centro,2016-04-02 15:47:43,
+281,Pessoa_jurídica,Clarisse Guimaraes Maciel,,,,,macielguimaraesclarisse@gmail.com,952379414,,,R Campo Sales ,,,Campina Grande,J. Pinheiro,2016-04-02 15:47:43,<NULL>
+282,Pessoa_jurídica,Cheirinho de Nene Conf Inf Ltda,,(81)3467-5312,,,,14522333000195,46774122,,Pe  Carapuceiro  ,777,,,,2016-04-02 15:47:43,<NULL>
+283,Pessoa_jurídica,Baby Toys Confecção ,,(82) 3327-4553,,,,1899622600015,242937497,,Rua Eng Mário Gusmão ,560,AL,Maceió,Ponta Verde,2016-04-02 15:47:43,<NULL>
+284,Pessoa_jurídica,CM modas ,,,,,,,,,Major Sousa Santos ,78,PB,Campina Grande,Catole,2016-04-02 15:47:43,<NULL>
+285,Pessoa_jurídica,DOCE MEL ,,,,,,,,,,,PE,Recife,,2016-04-02 15:47:43,<NULL>
+286,Pessoa_jurídica,Erotildes Francisca do Nascimento,,83-9629-7087,,,lisandonascimento@yahoo.com.br,11595898000104,161662358,,R-Vereador Elias Coelho de Sousa,137,PB,Santa Luzia,Francisco Cabral Junto do Seridó,2016-04-02 15:47:43,<NULL>
+287,Pessoa_jurídica,Eudes Ceara mirim,,,,,comercial elegante@hotmail.com,,,,General joão Varela,700,RN,Ceará Mirim,Centro,2016-04-02 15:47:43,<NULL>
+288,Pessoa_jurídica,F C Lima EPP,,,,,vascoconta@gmail.com,31995920001003 ,246004649,57020000,Rua do Comércio,239,AL,Maceió,Centro,2016-04-02 15:47:43,<NULL>
+289,Pessoa_jurídica,Francimeireee,,(84)3272-5915,,,baby-encanto@hotmail.com,841115000109,200732080,59140290,Rua Edgar Dantas,,RN,Parnamirim,Centro,2016-04-02 15:47:43,<NULL>
+290,Pessoa_jurídica,Gloria Moveis Ltda ME,,(79)3265-1457,,,,9072076000105,271206810,49600970,Bejamin Constante ,105,SE,Nossa Senhora das Dores,Centro,2016-04-02 15:47:43,<NULL>
+291,Pessoa_jurídica,Gremira Paiva ,,,,,,,,,,,PB,Pombal ,,2016-04-02 15:47:43,<NULL>
+292,Pessoa_jurídica,Isabel Aparecida Alcaltél ,,,,,isabel_aalcala@hotmail.com,16637026000185,134614160,78050000,Avenida Historiador Rubens de Mendonça,260,MT,Cuiabá,Bosque da Saúde,2016-04-02 15:47:43,<NULL>
+293,Pessoa_jurídica,IT Lacerda comercio Ltda,,(98)3259-3311,,,teoetati@gmail.com,12840778000198,123470064,,Av São Luiz Rei de Franca ,08   L-2034,MA,     S.Luiz ,Shopping Rio Anil,2016-04-02 15:47:43,<NULL>
+294,Pessoa_jurídica,J N A Comercio Ltda,,,,,vinicios@gloriamoveis.com,4600860000117,271033282,49680000,Av. Lourival Batista,289,SE,Nossa Senhora da Glória,Centro,2016-04-02 15:47:43,<NULL>
+295,Pessoa_jurídica,Jorge Fernandes da Silva ,,,,,,20575815434,,58415290,Rua Getúlio Cavalcante,19012 AT-001,PB,Campina Grande,Jardim Paulistano,2016-04-02 15:47:43,<NULL>
+296,Pessoa_jurídica,José Alberto do Nascimento,,(81)3722-2041,,,,22016619449,1853606,,Manoel lubambo,88,PE,Caruaru,Salgado,2016-04-02 15:47:43,<NULL>
+297,Pessoa_jurídica,José Wellington  Freire Fouca,,,,,,6159688000129,248471597,57300360,Rua Laécio Roberto,6,AL,Arapiraca,Centro,2016-04-02 15:47:43,<NULL>
+298,Pessoa_jurídica,Josália Araújo Cavalcante,,83-8773-2273,,,,,,,,,PB,Taperoá,,2016-04-02 15:47:43,<NULL>
+299,Pessoa_jurídica,Lisiane,,(83) 3229-8750,,,,,,,,,PB,Santa Rita,,2016-04-02 15:47:43,<NULL>
+300,Pessoa_jurídica,Luciana da Costa Santos Lira ,,(83)3361-3752,,,lojapqninos@gmail.com,12476110000103,161740618,,R-Floriano Peixoto,    240   box-06  ,PB,Esperança,Centro,2016-04-02 15:47:43,<NULL>
+301,Pessoa_jurídica,Luiz Carlos & Cia Ltda,<NULL>,(00) 00000-0000, - ,<NULL>,<NULL>,08418360000110,246.013.540,<NULL>,Praça Manoel Andrade,46,AL,Arapiraca,Centro,2016-04-02 15:47:43,
+302,Pessoa_jurídica,Luiz tecidos,<NULL>,<NULL>, - ,<NULL>,<NULL>,22222222222,<NULL>,<NULL>,Barão do abiaí,<NULL>,PB,Joao pessoa,centro,2016-04-02 15:47:43,
+303,Pessoa_jurídica,Maria das Dores P da Silva - Confecão - ME,,,,,,5817197000170,248460641,57800000, ,57,AL,União dos Palmares,,2016-04-02 15:47:43,<NULL>
+304,Pessoa_jurídica,Maria do P. Socorro A. ,,(98)3266-0644,,,luzane_g2@hotmail.com,7756032000160,122242211,65076820,Avenida Professor Carlos Cunha,1000     l-224,MA,São Luiz,Jaracaty,2016-04-02 15:47:43,<NULL>
+305,Pessoa_jurídica,Maria dos Navegantes de Lima Me,,(84)-35213642,,,boutiquebella@bol.com.br,70047428000175,200411802,59500000, Martins Ferreira  ,,RN,Macau,Centro,2016-04-02 15:47:43,<NULL>
+306,Pessoa_jurídica,Maria Helena Araujo Rocha & cia Ltda,,,,,alinebabydecoracoes@hotmail.com.br,2014387000160,270948961,49900000, Av Augusto Maynarde,114,SE,Propriá,Centro,2016-04-02 15:47:43,<NULL>
+307,Pessoa_jurídica,Maria Núbia de lima ,,(84)3521-3560,,,miscelania.macau@hotmail.com,3088599000155,201409305,59500000,Rua Apodi ,110,RN,Macau,centro,2016-04-02 15:47:43,<NULL>
+308,Pessoa_jurídica,Maria Selma,,(83)8819-5006,,,,,,,Av. Senador Rui Carneiro,241      L-58,SP,Joao Pessoa,Tambau,2016-04-02 15:47:43,<NULL>
+309,Pessoa_jurídica,Maria Zuleide de Lima,,(83)3043-7175   ,,,zufofurinha@gmail.com,,,,R- Coelho Lisboa  ,845,PB,Joao Pessoa,Jaguaribe ,2016-04-02 15:47:43,<NULL>
+310,Pessoa_jurídica,Monica figueredo Soares,,(83) 3421-1580 ,,,bi-biecia@hotmail.com,,,58703060,Rua Doutor José Genuá­no,693,PB,Patos,Liberdade,2016-04-02 15:47:43,<NULL>
+311,Pessoa_jurídica,N L Confecção Ltda,,(83)3324-3223,,,,13379956000198,161804896,58038680,Rua Manoel Arruda Cavalcanti,,PB,João Pessoa,ManaÃíra,2016-04-02 15:47:43,<NULL>
+312,Pessoa_jurídica,Nobre e Silva Baby,,,,,,12261144000180,24325965,,Rua Praça Manuel Rodrigues da Rocha,4,AL,Santana do Ipanema,,2016-04-02 15:47:43,<NULL>
+313,Pessoa_jurídica,Olimpio e Silva,<NULL>,(82) 3228-8128,OI,<NULL>,omundoinfantil@hotmail.com,08413734000104,246.002.83,57020.220,Av-Moreira Lima,547,PB,Maceio,Farol,2016-04-02 15:47:43,
+314,Pessoa_jurídica,Patrícia do Socorro Nery Fernandes ,,(83)3382-1021,,,,3148049000184,161238629,58660000, Humberto Evaristo ,54,PB,Juazeirinho,Centro,2016-04-02 15:47:43,<NULL>
+315,Pessoa_jurídica,Queiroz Araújo & cia JP,,(83)3342-1900,,,omundoinfantil@hotmail.com,435963000380,161562299,,Av. Santos Dumont    ,108,PB,Joao Pessoa,Centro,2016-04-02 15:47:43,<NULL>
+316,Pessoa_jurídica,Queiroz Araújo & cia CP - Catole,,,,,omundoinfantil@hotmail.com,435963000460,161663150,,Av- vigario calixto  ,1395- L-14,PB,Campina Grande ,Catolé,2016-04-02 15:47:43,<NULL>
+317,Pessoa_jurídica,Queiroz Araújo & cia CP-Centro,,(83)3342-1900,,,omundoinfantil@hotmail.com,435963000118,161069681,,Maciel Pinheiro ,157,PB,Campina Grande,Centro,2016-04-02 15:47:43,<NULL>
+318,Pessoa_jurídica,Rejane ,,(83)3271-2893,,,,,,,,,PB,Guarabira ,,2016-04-02 15:47:43,<NULL>
+319,Pessoa_jurídica,Rita Ferreira Nunes Barreto,,(84)3441-1225,,,,1146936000198,161123813,58884000,Venãncio Neiva  ,35,PB,Catolé do Rocha ,Centro,2016-04-02 15:47:43,<NULL>
+320,Pessoa_jurídica,Shopping das malhas ltda me    ,,,,,malhariacba@gmail.com,86765070000156,131516558,,Galdino Pimentel  ,L- 14    S-05,MT,Cuiabá,Palácio do comercio ,2016-04-02 15:47:43,<NULL>
+321,Pessoa_jurídica,Socorro Sta Terezinha,,,,,,,,,C Sales ,,,Campina Grande,,2016-04-02 15:47:43,<NULL>
+322,Pessoa_jurídica,Solange enxovais,<NULL>,<NULL>,TIM,<NULL>,<NULL>,50044508468,181.360.750,58840.000,<NULL>,361,PB,Pombal,<NULL>,2016-04-02 15:47:43,
+323,Pessoa_jurídica,Sonho de bebe,,(83)8761-7111,,,sandrinhacg@hotmail.com,,,,joana darque ,323,PB,Campina Grande,Jose Pinheiro,2016-04-02 15:47:43,<NULL>
+324,Pessoa_jurídica,Tal Albuquerque Comércio e Representações,,(98)3235-0301,,,,2871207000167,121683141,,AV Grande Oreiente ,Qd-44 - 24,MA,São Luiz,Reanascença 1,2016-04-02 15:47:43,<NULL>
+325,Pessoa_jurídica,Thita Comercial,,(79)9879-8050,,,denguinhodamamae_contato@denguinhodamamae.com.br,13698995000158,271318058,49010150,Rua Pacatuba,285,SE,Aracaju,Centro,2016-04-02 15:47:43,<NULL>
+326,Pessoa_jurídica,Treze Futbol club,,(83)3077-1313,,,atendimento@coracaotrezeano.com.br,8858508000137,,,Marques do herval   ,16,PB,Campina Grande,Centro,2016-04-02 15:47:43,<NULL>
+327,Pessoa_jurídica,Valdijania Cardoso de Oliveira,,(82)3621-1411,,,omundoinfantil@hotmail.com,41177809000170,248331492,,Ministro josé Américo,,AL,Santana do Ipanema,Centro,2016-04-02 15:47:43,<NULL>
+328,Pessoa_jurídica,Lacerda Albuquerque Comércio ltda  2º andar   Q-06,,(98)3235-0829 ,,,amordebebe.financeiro@hotmail.com,12832866000148,123468205,,Av dos Holandeses  ,5,MA,São Luiz ,Calhau ,2016-04-02 15:47:43,<NULL>
+329,Pessoa_jurídica,Tania Maria de Castro Olegario,,,,,thamaraolegario@hotmail.com,,,58230000, Severino Camara,277,PB,Cacimba de Dentro,,2016-04-02 15:47:43,<NULL>
+330,Pessoa_jurídica,E J E de Almeida ,,,,,fj.almeid@bol.com.br,20738962000115,204129664,,Travessa Afonso Saraiva,64,RN,Macaiba,Centro,2016-04-02 15:47:43,<NULL>
+331,Pessoa_jurídica,Comercio Varejista Importado Dantas LTDA,,(84)3664-6530,,,,20531887000151,204112443,59114250,Avenida Boa Sorte,677,RN,Natal,Nossa Senhora da Apresentação,2016-04-02 15:47:43,<NULL>
+332,Pessoa_jurídica,Araujo e Louro Confecção Limitada,,(83)3281-1336,,,edna_morilo@hotmail.com,13199929000133,,58360000, Av José Silveira ,21,PB,Itabaiana,,2016-04-02 15:47:43,<NULL>
+333,Pessoa_jurídica,GHA Cardoso - ME,,(84)3213-1496,,,ghacardoso@hotmail.com,15673939000194,202706893,59030000,Avenida Coronel Estevam,1288,RN,Natal,Alecrim,2016-04-02 15:47:43,<NULL>
+334,Pessoa_jurídica,Josias Dionisio de Lima,,(84)3275-5053,,,dionisiodaconstrucao@gmail.com,9124876000114,200897080,59184971,AGC Cobé de Cima,Sn ,RN,Vera Cruz ,Cobé de Cima ,2016-04-02 15:47:43,<NULL>
+335,Pessoa_jurídica,Rita de Cássia de Melo Souza,,9982-0353,,,"rita_cassia.cg@hotmail,com",,,58415320,Rua Manoel Leonardo Gomes,1180,PB,Campina Grande,Jardim Paulistano,2016-04-02 15:47:43,<NULL>
+336,Pessoa_jurídica,Severina de Assis Sucupira,,,,,,8681875000108,161513425,,AV Senador Rui Carneiro,241 - L-86,PB,João Pessoa,Tambau,2016-04-02 15:47:43,<NULL>
+337,Pessoa_jurídica,Mercia Fizarly Virginio da Silv,<NULL>,(83) 8781-5307,OI,<NULL>,<NULL>,15080224000128,162.450.0,<NULL>,Jose Adelino de melo,215,PB,Campina Grande,Jose Pinheiro,2016-04-02 15:47:43,
+338,Pessoa_jurídica,Cristiane de Lima Terra ,,,,,,,,,"Rodrigues Alves 796, apt. 1010",,PB,Campina Grande,Prata,2016-04-02 15:47:43,<NULL>
+339,Pessoa_jurídica,Gianne Marques da Silva ,,32812353,,,gianne_marques_silva@hotmail.com,1340802000103,,58360000, Presidente João Pessoa,322,PB,Itabaiana,Centro,2016-04-02 15:47:43,<NULL>
+340,Pessoa_jurídica,Rubiana Camara de Araujo,,(84)3274-0642,,,espacofashion8@hotmail.com,9085395000147,202078159,59570000, Boa Ventura de sá,270,RN,Ceará-Mirim,centro,2016-04-02 15:47:43,<NULL>
+341,Pessoa_jurídica,HM DANTAS ,,(84)  3273-3221,,,emporiobabykids@gmail.com,9043375000103,202072363,56162000,R- Jaime Sales ,208,RN ,São José de Mipibu    ,Centro,2016-04-02 15:47:43,<NULL>
+342,Pessoa_jurídica,Gremira Fernandes ,,,,,,,,,,,,Natal,,2016-04-02 15:47:43,<NULL>
+343,Pessoa_jurídica,Eunice L. de Medeiros ,,(84) 3663-0731,,,novoimport@hotmail.com,5693202000260,202167976,59123030,Avenida Governador Antônio de Melo e Souza,2075,RN,Natal,Pajuçara,2016-04-02 15:47:43,<NULL>
+344,Pessoa_jurídica,Lili Baby (Lisiane),,(83) 3229-8750,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+345,Pessoa_jurídica,D SILVA MORAES,,(84) 3272-0540,,,dsilvademoraes@yahoo.com.br,9514020000155,202125580,, TRAV FERREIRA MALDO ,2500,RN,PARNAMIRIM ,CENTRO,2016-04-02 15:47:43,<NULL>
+346,Pessoa_jurídica,MORAES & LIMA LTDA,,(84) 3271-1985,,,macaibareal@yahoo.com.br,11174316000116,202233634,59280000,D. Pedro Velho ,98,RN,Macaíba,,2016-04-02 15:47:43,<NULL>
+347,Pessoa_jurídica,Elizabethe camisetas ,,,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+348,Pessoa_jurídica,MARIA GRACIELE DE OLIVEIRA,,(84) 3288-2459,,,,12227103000178,202345815,59218000,PRAÇA DR. LUIZ AMANCIO  ,32,RN,Passa e Fica,CENTRO,2016-04-02 15:47:43,<NULL>
+349,Pessoa_jurídica,MARIA APARECIDA FORMIGA,<NULL>,(83) 3431-3235, - ,<NULL>,<NULL>,99999999999,<NULL>,<NULL>,RUA JOÃO PESSOA,68,PB,POMBAL,CENTRO,2016-04-02 15:47:43,
+350,Pessoa_jurídica,Mercia Bezerra Braga,<NULL>,(83) 3361-2522, - ,<NULL>,<NULL>,55555555555,<NULL>,<NULL>,Manoel Rodrigues de Oliveira,217,AM,Esperança,Centro,2016-04-02 15:47:43,
+352,Pessoa_jurídica,Rildo Moura Silva Me ,,(83) 8719-3595,,,rildomourasilva@hotmail.com,20066466000105,,,Maria Eva de Moura     ,750,PB,Campina Grande ,Rocha Cavalçcante ,2016-04-02 15:47:43,<NULL>
+353,Pessoa_jurídica,O Barateiro,<NULL>,(84) 3386-2031, - ,<NULL>,<NULL>,88888888888,<NULL>,59955.000,R- José M Nascimento,258,RN,Tenente Ananias,Centro,2016-04-02 15:47:43,
+354,Pessoa_jurídica,ROSANA VALERIA DA SILVA PATRIOTA,,(83) 8868-8483,,,janaina_tbo@hotmail.com,20423771000107,,58428190,Avenida Professor Almeida Barreto,2936,PB,Campina Grande,Centenário,2016-04-02 15:47:43,<NULL>
+355,Pessoa_jurídica,Geisa Lima Cavalcante,<NULL>,(83) 3066-0824, - ,<NULL>,glalimentos@hotmail.com,44444444444,<NULL>,58410.097,Rua Guilhermino Barbosa,52,PB,Campina Grande,Estação Velha,2016-04-02 15:47:43,
+356,Pessoa_jurídica,T A L Albuquerque Com. Representações ,,(98) 3235-0301,,,financeiro.holandese@grupoamordebebe.com,2871207000167,121683141,65075180,Av Grande Oriente  ,24 Q-44,Ma,São Luiz ,Renascença ,2016-04-02 15:47:43,<NULL>
+357,Pessoa_jurídica,Liliane Gomes Pereira ,,(83) 3058-0172,,,sophiababyloja@gmail.com,19647659000162,162273991,58433274,Professor Maria Augusta ,532,PB,C Grande ,Malvinas,2016-04-02 15:47:43,<NULL>
+358,Pessoa_jurídica,Doce Mel com infantis Ltda Me,,(81) 3467-5312,,,suzixixixbaby@hotmail.com,5870303000189,,52060412,Praça Jornalista Francisco Pessoa de Queiroz,23  L  22,PE,Recife,Santana,2016-04-02 15:47:43,<NULL>
+359,Pessoa_jurídica,Igreja Congregacional do Calvario,,,,,,,,,Paulo de Frontin ,,PB,C Grande ,centro,2016-04-02 15:47:43,<NULL>
+360,Pessoa_jurídica,Dilane de Oliveira Ribeiro de Moura Me,<NULL>,(83) 3362-1539, - ,<NULL>,babylanemodainfantil@hotmail.com,03851746000105,<NULL>,58397.000,R Dr. José Evaristo,261,PB,Areia,centro,2016-04-02 15:47:43,
+361,Pessoa_jurídica,Conforto Com. de Moveis Ltda ,,(83) 3422-1390,,,iuna_dc@hotmail.com,4710220000160,161373690,58700970,Rua Epitacio Pessoa ,264,Pb,Patos,Centro,2016-04-02 15:47:43,<NULL>
+362,Pessoa_jurídica,Ingrid E. T. de Barros Varejista ,,(84) 3222-2733,,,,5517290000169,202459896,59162000, Praça Desembargador Celso Sales,112,RN,São José de Mipibu,centro,2016-04-02 15:47:43,<NULL>
+363,Pessoa_jurídica,Ingrid E. T. de Barros Varejista ,,(84) 3222-2733,,,,5517290000169,202459896,59162000, Praça Desembargador Celso Sales,112,RN,São José de Mipibu,centro,2016-04-02 15:47:43,<NULL>
+364,Pessoa_jurídica,Silvana L Guedes  de Andrade BAMBINO ,,(83) 3310-9910,,,,3716615000107,161273343,58400100,Rua Maciel Pinheiro,175,PB,Campina Grande,Centro,2016-04-02 15:47:43,<NULL>
+365,Pessoa_jurídica,Silvana L Guedes  de Andrade BAMBINO ,,(83) 3310-9910,,,,3716615000107,161273343,58400100,Rua Maciel Pinheiro,175,PB,Campina Grande,Centro,2016-04-02 15:47:43,<NULL>
+366,Pessoa_jurídica,Lígia Santos da Silva ,,(84) 3521-3680,,,,1836791000157,200904469,59500000, João Clemente,73,RN,Macau,Centro,2016-04-02 15:47:43,<NULL>
+367,Pessoa_jurídica,ARAUJO E MENDONÇA ,,(84) 3283-2282,,,araujocenter@hotmail.com,7851957000190,202019438,59219000, Tv Antonio Alves Pereira ,12,RN,Brejinho,,2016-04-02 15:47:43,<NULL>
+368,Pessoa_jurídica,Veronica Onofre de Oliveira ,,(84) 3257-0212,,,Charme_estilo.ls@hotmail.com.,13363638000139,202471446,59247000, R Genésio Tomáz ,13,RN,Lagoa Salgada,Centro,2016-04-02 15:47:43,<NULL>
+369,Pessoa_jurídica,M de M de Oliveira,,(84) 3521-2089,,,micheline.rocha@salinor.com.br,3443338000106,201415160,59500000, Pedro Teteu,3,RN,Macau,,2016-04-02 15:47:43,<NULL>
+370,Pessoa_jurídica,E Ribeiro Sobrinho,,(84) 3282-3348,,,luceliavariedadesAhotmail.com,16894796000103,202763200,59255000, Praça Getúlio Vargas ,76,RN,Santo Antônio,Centro,2016-04-02 15:47:43,<NULL>
+371,Pessoa_jurídica,Lucinete Sabino ,,(83) 3339-5572,,,lucinetesabino@yahoo.com.br,7275551000107,161447600,58432770,Rua Jamila Abrahão Jorge,315,PB,Campina Grande,Malvinas,2016-04-02 15:47:43,<NULL>
+372,Pessoa_jurídica,Euzenira da Silva Cabral Armarinho Me,,,,,,3839041000164,161281856,58178000, R Seis de Junho ,333,PB,Nova Floresta,Centro ,2016-04-02 15:47:43,<NULL>
+373,Pessoa_jurídica,Baby Shop Confecções  Infantil ME,,(79) 3213-7229,,,,2579744000138,270966080,49010500,Travessa Baltazar Góes,76,SE,Aracaju,Centro,2016-04-02 15:47:43,<NULL>
+374,Pessoa_jurídica,R. Karina Tavares ,,(84) 3663-7514,,,ronysantificado@hotmail.com,18504386000134,202905152,59138000,Avenida da Chegança,3055,RN,Natal,Lagoa Azul,2016-04-02 15:47:43,<NULL>
+375,Pessoa_jurídica,Igreja Congregacional do Calvário ,,(83) 3341-2962,,,,,,,Paulo de Frontin,,PB,Campina Grande ,Centro,2016-04-02 15:47:43,<NULL>
+376,Pessoa_jurídica,Jaqueline C  da Silva ,,(84) 3289-0012,,,jackson.lucas12@hotmail.com,4958982000180,201430703,59214970,Av-Fausto Mariano das Neves ,179,RN,Serra de São Bento,Centro,2016-04-02 15:47:43,<NULL>
+377,Pessoa_jurídica,Cristina Ligia de Sales Porto,,3384-1026   supemerc,,,castelilhosuper@yahoo.com.br,7345807000105,161449905,58150000, R CONEGO PEQUENO,132 A,PB,Pocinhos,Centro,2016-04-02 15:47:43,<NULL>
+378,Pessoa_jurídica,ELIZABETE     (Camisetas),,,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+379,Pessoa_jurídica,Adriana Pessoa ,,(84) 3288-2268,,,adriana-estilostwllus@hotmail.com,998493000109,201361256,59218970,R Pe; João xxlll,82,Rn,Passe e Fica,Centro,2016-04-02 15:47:43,<NULL>
+380,Pessoa_jurídica,L Erlan de Araújo Silva Ltda Me,,,,,,19955156000154,244054517,57300360,Rua Lúcio Roberto,98A,AL,Arapiraca,Centro,2016-04-02 15:47:43,<NULL>
+381,Pessoa_jurídica,Maria de Fatima Pereira Silva ,,(83) 3391-1095,,,fatima-cp@hotmail.com,2171455000103,,58450000, R Epitacio Pessoa   ,117,PB,Boqueirão,centro,2016-04-02 15:47:43,<NULL>
+382,Pessoa_jurídica,Loja Pinguinho  de Gente    Polianna,,(83) 8837-1626,,,lojapinguinhodegente@hotmail.com,,,58045050,Av  Marcionila da Conceição ,1488,Pb,J Pessoa  ,Cabo Branco,2016-04-02 15:47:43,<NULL>
+383,Pessoa_jurídica,Alcemire Santos Alves Fernandes,,(83) 3385-1324,,,ronniemackartney@hotmail.com,,,58167000, Av Julimar de Sousa,6,PB,Cubati,Centro,2016-04-02 15:47:43,<NULL>
+384,Pessoa_jurídica,Lojinha NalluBaby,,,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+385,Pessoa_jurídica,Gilvanio Oliveira Vieira ,,(83) 3382-1782,,,malharia2irmaos@hotmail.com,10578463000199,161618413,58660000,José Cosme           ,145,PB,Juazerinho,Centro,2016-04-02 15:47:43,<NULL>
+386,Pessoa_jurídica,Josenilda Gomes S. Moraes,,-83,,,josenilda90@gmail.com,,,,Rua Neuza Marcelino Oliveira,227,RN,Equador,centro,2016-04-02 15:47:43,<NULL>
+387,Pessoa_jurídica,ANA CLÍSSIA FERREIRA DE MACEDO,,(83) 3372-2488,,,ana.debora.cuite@hotmail.com,7326837000174,,58175000, Rua Napoleão Laureano,,PB,Cuité,centro,2016-04-02 15:47:43,<NULL>
+388,Pessoa_jurídica,S P DO NASCIMENTO- ME,,,,,,10966317000130,202216950,59141090,Rua Cruzeiro do Sul,147   1397,RN,Parnamirim,Santos Reis,2016-04-02 15:47:43,<NULL>
+389,Pessoa_jurídica,Alana Baracho de Araújo   ALINE,,,,,allinnebaracho@gmail.com,22382442000182,162515308,58397000, Praça Ministro José Americo,454,PB,Areia,centro,2016-04-02 15:47:43,<NULL>
+390,Pessoa_jurídica,A L C PINHO,,(84) 3262-2597,,,,9615382000132,202134938,59114211,Rua Couto Magalhães,2222,RN,Natal,Nossa Senhora da Apresentação,2016-04-02 15:47:43,<NULL>
+391,Pessoa_jurídica,Célio                                                                   (Bambino),,,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+392,Pessoa_jurídica,CÉLIO ROBERTO  GUEDES DE ANDRADE JUNIOR,,(83) 3322-3240,,,celioguedesjr@hotmail.com,4493590424,,58400093,Rua Semeão Leal ,64,PB,C Grande ,Centro,2016-04-02 15:47:43,<NULL>
+393,Pessoa_jurídica,Solange enxovais ,,(83) 3431-3318,,,,5127850000179,181360750,58840000, Rua Cel. Cândido de Assis,361,PB,Pombal,,2016-04-02 15:47:43,<NULL>
+394,Pessoa_jurídica,Elaine Cristina Sales Miranda,,(84) 3274-2937,,,comercialelegante@hotmail.com,3954673000179,200860947,59570000,Av Gen João Varela,700,RN,Ceará-Mirim,centro,2016-04-02 15:47:43,<NULL>
+395,Pessoa_jurídica,DUDA BILU COM.  VETUÁRIO E ACESSORIOS LTDA,,,,,mel_pvh@hotmail.com,11462072000177,202577053,59152600,Av. Maria Lacerda  Montenegro   613    Loja  28,613,RN,Nova Parnamirim,Centro,2016-04-02 15:47:43,<NULL>
+396,Pessoa_jurídica,Maria de Fatima  KAKA,,,,,,,,,Rua Josué Sobreira de Carvalho,29,PB,C. grande ,catolé,2016-04-02 15:47:43,<NULL>
+397,Pessoa_jurídica,A. GUEDES E CIA LTDA,,(83) 3322-3240,,,,8686735000122,,58400093,Rua Semeão Leal,64,PB,Campina Grande,Centro,2016-04-02 15:47:43,<NULL>
+398,Pessoa_jurídica,A Guedes e Cia Ltda,,(83) 3322-3240,,,,,,58400093,Semeão Leal ,64,PB,C. Grande,Centro,2016-04-02 15:47:43,<NULL>
+399,Pessoa_jurídica,,,,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+400,Pessoa_jurídica,,,,,,,,,,,,,,,2016-04-02 15:47:43,<NULL>
+401,Pessoa_jurídica,Ana karine moraes,Encanto de papel,(83) 98771-2792,OI,(83) 3066-3139,<NULL>,14864894000172,<NULL>,58400.520,Rua Antenor Navarro,330,PB,Campina Grande,Prata,2016-04-13 13:39:46,
+402,Pessoa_física,Luzia felix de sousa,Lu moda Baby,(83) 99965-1796,TIM,<NULL>,luziafelix55@hotmail.com,06235863470,<NULL>,58175.000,Rua Assis Chateaubriand,93,PB,Cuité,Centro,2016-04-29 16:07:12,
+403,Pessoa_jurídica,Bambino,<NULL>,(83) 33109-910,FIXO,<NULL>,<NULL>,00000000000000,<NULL>,<NULL>,R- Semeão Leal,<NULL>,PB,CAMPINA GRANDE PB,CENTRO,2016-05-03 13:26:13,
+404,Pessoa_jurídica,Soares e barros ltda,Tem tem Baby,(83) 99950-4499,TIM,(83) 3444-2788,robervalsoares2@hotmail.com,05148097000106,<NULL>,<NULL>,Rua Padre Sandoval Fere,168,PB,São Bento,Centro,2016-05-17 09:09:48,
+405,Pessoa_jurídica,João de oliveira barros filho,Angela Variedades,<NULL>,OI,(84) 3277-2330,angelavariedades@ig.com,12760674000173,201.169.649,59164.000,Praça Coronel José  de Araujo,53,RN,Floresta,Centro,2016-05-20 15:28:50,
+406,Pessoa_física,Sonia maria de luna maciel,Belo Bebê,(83) 99920-3550,TIM,(83) 3565-8189,meubelobebe@gmail.com,00000000000,<NULL>,<NULL>,mangabeira shopping,<NULL>, - ,João pessoa,Mangabeira,2016-07-08 16:29:01,

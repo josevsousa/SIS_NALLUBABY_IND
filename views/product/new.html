@@ -1,0 +1,42 @@
+{{extend "layout_1.html"}}
+{{block head}}
+<script>
+	$(document).ready(function(){
+
+		// incrementa o ultimo numero de funcionario
+		$('#product_code').val('{{=new_code_product()}}');
+
+		$("#product_unit_price").maskMoney({decimal:'.'});
+		// mask
+		// $('#clientes_celular').mask("(99) 99999-9999");
+		// $('#clientes_fixo').mask("(99) 9999-9999");
+		// $('#clientes_cpf').mask('000.000.000-00');
+		// $('#clientes_cnpj_cpf').mask('00000000000000');
+		// $('#clientes_insc').mask('000000000000000');
+		// $('#clientes_cep').mask('00000.000');
+	});
+</script>
+{{end}}
+
+{{block featured}}
+ <div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1> Novo produto</h1>
+			</div>
+			<div class="col-md-4">
+				{{=A(SPAN(_class="glyphicon glyphicon-list")," Tabela de produtos",_class="btn btn-default btn-lg btn_style_1",_href=URL('product','list'))}}	
+			</div>	
+		</div>
+	</div>
+</div>	
+{{end}}
+
+{{block main}}
+	<div class="container">	
+		<div class="well form_style_1">
+			{{=form}}
+		</div>	
+	</div>
+{{end}}

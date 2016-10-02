@@ -1,0 +1,55 @@
+{{extend "layout_1.html"}}
+<!-- HEAD -->
+{{block head}}
+	<script>
+		$(document).ready(function(){
+
+			$('#minhaTabela').DataTable({
+	            // "scrollX": true,
+	            "order": [ 2, 'asc' ],
+	            "language": {
+	              "url": "{{=URL('static','js/tradutorTable.json')}}"
+	            }
+	        });
+
+			$(".b_delet").on("click", function(){
+				id = $(this).attr('id');  
+				$("#transitory").val(id);	
+				// se for admin 
+				{{if not auth.has_membership('admin'):}}
+					window.location="../home/nao_autorizado";
+				{{else:}}
+					if (confirm('Deseja mesmo apagar o item?')) {
+						ajax('remov', ['transitory'], ':eval');   // :evel "o retorno é pra essa pagina"
+					}
+				{{pass}}
+			});	        
+
+		})
+	</script>
+{{end}}
+
+
+{{block featured}}
+<input type="text" id="transitory" name="transitory" style="display: none"></input>
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Tabela de produtos</h1>
+			</div>
+			<div class="col-md-4">
+				{{=A(SPAN(_class="glyphicon glyphicon-share")," novo produto",_class="btn btn-default btn-lg btn_style_1",_href=URL('product','new'))}}	
+			</div>	
+		</div>
+	</div>
+</div>		
+{{end}}
+
+{{block main}}
+<div >	
+	<div>
+	{{=table}}
+	</div>	
+</div>
+{{end}}

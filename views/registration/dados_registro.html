@@ -1,0 +1,56 @@
+{{extend 'layout_1.html'}}
+{{block head}}
+{{end}}
+
+{{block featured}}
+ <div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>{{=registrations[0]['name']}}</h1>
+			</div>
+			<div class="col-md-4">
+				{{  status = request.args(1)
+					=A(SPAN(_class="glyphicon glyphicon-list")," Tabela de %s"%status,_class="btn btn-default btn-lg btn_style_1",_href=URL('registration', 'list?status=%s'%status))
+				}}	
+			</div>	
+		</div>
+	</div>
+</div>	
+{{end}}
+
+{{block main}}
+<div class="container">	
+	<div class="row">
+		<div class="col-md-6">
+			<div class="center">				
+				{{
+					if registrations[0]['thumbnail']:
+						=IMG(_src=URL('home','download',args=registrations[0]['picture']), _width='100%', _class='picture_product')
+					else:
+						=IMG(_src=URL('static','images/no_picture.png'), _width='100%', _class='picture_product')
+					pass
+				}}			
+			</div>	
+		</div>
+		<div class="col-md-6">
+			<ul class="table_view">
+				<li>
+					<div class="header_table_view">Registro:</div>
+					<span class="label label-default">{{=registrations[0]['code']}}</span>
+				</li>
+				<li>
+					<div class="header_table_view">Nome:</div>
+					<span>{{=registrations[0]['name']}}</span>
+				</li>
+				<li>
+					<a href="../../list?status={{=request.args(1)}}" class="btn btn-default btn-sm">
+  <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Voltar
+</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{{end}}
+

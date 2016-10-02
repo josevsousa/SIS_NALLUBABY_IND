@@ -1,0 +1,86 @@
+{{extend 'layout_1.html'}}
+
+{{block head}}
+<link rel="stylesheet" type="text/css" href="{{=URL('static','css/historico/vendas.css')}}">
+<script type="text/javascript" src="{{=URL('static','js/jquery.canvasjs.min.js')}}"></script> 
+<script type="text/javascript" src="{{=URL('static','js/historico/vendas.js')}}"></script> 
+<script type="text/javascript"> 
+	$(document).ready(function(){
+
+		$('#tableHistorico').DataTable({
+	        // "scrollX": true,
+	        "order": [ 4, 'desc' ],
+	        "language": {
+	          "url": "{{=URL('static','js/tradutorTable.json')}}"
+	        }
+	    });
+
+		var receita = {{=receita}};
+
+		$("#columnchart_values").CanvasJSChart({ 
+			title: { 
+				// text: "Worldwide Smartphone sales by brand - 2012",
+				// fontSize: 24
+			}, 
+			axisY: { 
+				title: "Products in R$" 
+			}, 
+			legend :{ 
+				verticalAlign: "center", 
+				horizontalAlign: "right" 
+			}, 
+			data: [ 
+			{ 
+				type: "pie", 
+				showInLegend: true, 
+				toolTipContent: "{label} <br/> R$ {y}", 
+				indexLabel: "{y} R$", 
+				dataPoints: [ 
+					{ label: 'Janeiro', y: receita[0], legendText: "Janeiro" }, 
+					{ label: 'Fervereiro', y: receita[1], legendText: "Fervereiro" }, 
+					{ label: 'Março', y: receita[2], legendText: "Março" }, 
+					{ label: 'Abril', y: receita[3], legendText: "Abril" }, 
+					{ label: 'Maio', y: receita[4], legendText: "Maio" }, 
+					{ label: 'Junho', y: receita[5], legendText: "Junho" }, 
+					{ label: 'Julho', y: receita[6], legendText: "Julho" }, 
+					{ label: 'Agosto', y: receita[7], legendText: "Agosto" }, 
+					{ label: 'Setembro', y: receita[8], legendText: "Setembro" }, 
+					{ label: 'Outubro', y: receita[9], legendText: "Outubro" }, 
+					{ label: 'Novembro', y: receita[10], legendText: "Novembro" }, 
+					{ label: 'Desembro', y: receita[11], legendText: "Desembro" }
+				] 
+			} 
+			] 
+		}); 
+	}); //fim do ready
+</script> 
+
+{{end}}
+
+{{block featured}}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+		<h1>Histórico de venda</h1>
+		</div>
+	</div>
+</div>	
+{{end}}
+
+{{block main}}
+	<div class="row">
+		<div class="col-md-5">
+			 <div id="columnchart_values" style="width: 400px; height: 220px;">
+			 	<img src="{{=URL('static','images/loadGif.gif')}}" id="load" alt="">
+			 </div>
+		</div>
+		<div class="col-md-7">
+		<h2>Historico das vendas concluidas</h2>
+		</div>
+	</div><!-- fim row -->
+	<div class="row">
+		<div class="col-md-12">
+			{{=grid}}
+		</div>
+	</div>
+{{end}}

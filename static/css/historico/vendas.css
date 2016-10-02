@@ -1,0 +1,16 @@
+/*div#columnchart_values {
+    float: right;
+    margin-right: 35px;
+}*/
+
+div#tableHistorico_wrapper {
+    margin-bottom: 22px;
+}
+a.b_view {
+    color: #30BDFD;
+    margin-left: 42%;
+    cursor: pointer;
+}
+a.b_view:hover{
+	color: #5EEA1C;
+}

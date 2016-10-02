@@ -1,0 +1,63 @@
+@media only print
+    {
+       /*  body * { display: none !important; }
+        body:after { content: "Don't waste paper!"; }*/
+        .menu_etiqueta{display:none !important;}
+        .end{display: block !important;}
+        table tbody tr td, table thead tr th {
+            border: 1px solid #505050 !important;
+        }
+    }
+body {
+    padding: 10px !important;
+    margin-bottom: 60px;
+}
+.menu_etiqueta {
+    background: #F8F5F0;
+    padding: 9px;
+    border-radius: 3px;
+    margin-bottom: 19px;
+}
+input#qtd {
+    width: 92px;
+    display: inline;
+    height: 39px;
+}
+div#bts {
+    float: right;
+}
+div#load_etiqueta h2 {
+    text-align: center;
+    color: #DCD2C1;
+}
+.menu_etiqueta span {
+    font-size: large;
+}
+#grid_etiquetas {
+    list-style: none;
+    padding: 0px;
+    font-size: 12px;
+}
+#grid_etiquetas>li ul {
+    width: 50% !important;
+    float: left;
+    padding: 5px;
+    margin-bottom: 9px;
+}
+
+address {
+    margin-bottom: 0px;
+}
+img {
+    float: left;
+    width: 28%;
+    margin-right: 14px;
+}
+.limpar{
+	clear: both;
+}
+#load_etiqueta>img {
+    width: 85px;
+	margin: 55px 44%;
+    display: none;
+}

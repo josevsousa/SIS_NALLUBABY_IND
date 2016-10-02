@@ -1,0 +1,186 @@
+{{extend 'layout_1.html'}}
+
+{{block head}}
+	<script>
+		$(document).ready(function(){
+			var total = {{=session.caixa['total']}};
+			$("#no_table_din").maskMoney({decimal:'.', affixesStay: false});
+			// tipo
+			$('input[name=tipo]').on('change',function(){
+				// mostrar o resto dos campos e desativar button finalizar
+				$('#enviar, #no_table_por, #no_table_din, #no_table_parcelas').attr('disabled',false);
+				$('#itens_validade').slideDown(400);
+				// gravar na session
+				$('#transitory').val($(this).val());
+				ajax('gravar_tipo',['transitory']);
+			});
+			// por e din
+			$("#no_table_din, #no_table_por").on('change',function(){
+				var por = no_table_por.value;
+				var din = no_table_din.value;
+				$("#transitory").val(por+";"+din);
+				// zera parcelas
+				ajax('calc_subtotal',['transitory'],'box_2');
+				if ((no_table_parcelas.value) != '') {
+					ajax('gerar_grid_parcelas',null,'grid_parcelas');
+				}
+			})
+			// parcelas
+			$('#no_table_parcelas').on('change',function(){
+				$('#transitory').val(this.value);
+				ajax('iniciar_grid_parcelas',['transitory'],'grid_parcelas');
+			})
+			// canelar venda
+			$('#cancelar').on('click',function(e){
+				e.preventDefault();
+				if (confirm('Tem certaza que dejesta deletar a venda?')) {
+					ajax('cancelar_venda',null);
+					window.location = "etapa_1";
+				}
+			})
+
+			// enviar
+			$('#enviar').on('click',function(e){
+				// envio de parcelas
+				if($('#no_table_parcelas').val() != '' ){
+					// ----- GRID PARCELAS -----
+					var trs = [];
+					var tds = [];
+					var new_trs = '';
+					// montar a row
+					$('#grid_parcelas_db tr').each(function(){
+					    $(this).each(function(){
+					    	trs.push(this.children)
+					    });
+					});
+					$(trs).each(function(){
+						var n = $(this)[0].textContent;
+						var d = $(this[2]).children(0)[0]['value'];
+						var v = $(this[1]).children(0)[0]['value'];
+						new_trs += (n+","+d+","+v+";");
+					});
+					// converte array em json
+					// [["1","94.33","2016-10-21"],["2","94.33","2016-11-20"],["3","94.33","2016-12-20"]]
+					var json = new_trs;
+
+					$('#transitory').val(json);
+				}else{
+					var json = 'False';	
+					$('#transitory').val('False');
+				}; // fim do envio de parcelas
+
+				e.preventDefault(); //não submet o formulario ao clicar no botao
+				
+				// confimar o fechamento do caixa
+				if (confirm('Venda registrada?')) {
+					ajax('gravar_venda',['transitory'],'html');
+					window.location = "etapa_1";
+					
+				}
+			});
+
+			// cancela o envio de formulario pela tecla enter
+		    $('input').keypress(function (e) {
+		        var code = null;
+		        code = (e.keyCode ? e.keyCode : e.which);                
+		        return (code == 13) ? false : true;
+		    });
+		});
+	</script>
+{{end}}
+
+{{block featured}}
+<div class="jumbotron">
+	<div class="container">
+		<!-- linha 1 -->
+		<div class="row">
+			<!-- 1/3 -->
+			<div class="col-md-3 left">
+				<div id="status">
+					<a href="etapa_1" class="btn_style_2 etapa_ok">1</a>
+					<a href="etapa_2" class="btn_style_2 etapa_ok">2</a>
+					<span class="btn_style_2" id="n3">3</span>
+				</div>
+			</div>
+			<!-- 2/3 -->
+			<div class="col-md-6 left">
+				<h1>Finalizar pedido</h1>
+			</div>
+			<!-- 3/3 -->
+			<div class="col-md-3" ></div>	
+		</div>
+	</div>
+</div>	
+{{end}}
+
+{{block main}}
+	<div class="container">
+		<!-- linha 1 -->
+		<div class="row">
+			<!-- 1/2 -->
+			{{=form.custom.begin}}
+			<div class="col-md-6">
+				<ul class="list-group">
+				  	<li class="list-group-item" id="tipo_pagamento">
+				  		{{=form.custom.widget.tipo}}				    	
+				  	</li>
+				  	<div id="itens_validade">
+					<li class="list-group-item grade" id="desconto">
+						<span id="label"> Desconto</span>
+						<div class="rp">
+							% :
+							{{=form.custom.widget.por}}
+							R$ :
+							{{=form.custom.widget.din}}
+						</div>
+					</li>
+
+				  	<li class="list-group-item grade" id="parcelas">
+					  	<span> Parcelas</span>
+						<div>
+							{{=form.custom.widget.parcelas}}
+						</div>	
+				  	</li>
+				  	</div>
+				</ul>
+			</div>
+	
+			<!-- 2/2 -->
+			<div class="col-md-6" id="box_2">
+				<ul class="list-group">
+				  <li class="list-group-item">
+				    <span id="total">
+				    	{{=format_price(float(session.caixa['total']))}}
+				    </span>
+				    Total
+				  </li>
+				  <li class="list-group-item">
+				    <span id="desconto_real">
+				    	{{=format_price(float(session.caixa['desconto']))}}
+				    </span>
+				    Desconto
+				  </li>
+				  <li class="list-group-item">
+				    <span id="subTotal">
+				    	{{=format_price(float(session.caixa['sub_total']))}}
+				    </span>
+				    Sub Total
+				  </li>
+				</ul>
+			</div>
+		</div>
+		<!-- linha 2 -->
+		<div class="row">
+			<!-- 1/2 -->
+			<div class="col-md-6" id="grid_parcelas">
+				{{=grid_parcelas}}
+			</div>
+			<!-- 2/2 -->
+			<div class="col-md-6 btn-vendas">		
+				{{=form.custom.submit}}
+				{{=buttons}}
+			</div>
+		{{=form.custom.end}}		
+		</div>	
+	</div>
+{{end}}

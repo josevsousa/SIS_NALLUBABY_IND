@@ -1,0 +1,909 @@
+session.pessoa = item{"nome":"jose","idade":45}
+session.pessoa( item = {"nome":"jose","idade":45} )
+item = {"nome":"jose","idade":45}
+session.nome.append(item)
+session.nome = []
+session.nome.append(item)
+session.nome
+session.nome['idade']
+session.nome[0]['idade']
+session.nome.delete
+session.nome.del
+session.nome.delete()
+session.nome.remove()
+session.tens
+session.etapa_1 = {
+"nome": form_etapa1.vars.cliente
+"representante": form_etapa1.vars.representante
+}
+session.etapa = {"nome":"jose", "idade":45}
+session.etapa['nome']
+dir(session.etapa)
+session.etapa.items
+print session.etapa.items
+session.etapa.values
+print session.etapa.values
+session.etapa.del()
+session.etapa.del
+session.etapa.__delitem__('etapa')
+session.etapa
+session.__delitem__('etapa')
+session.etapa
+session.etapas = []
+session.etapa_1
+print session.etapa_1
+x = {'representante': 'Bobocao', 'nome': 'Dudex'}
+x['representante']
+form_etapa1.elements
+print form_etapa1.elements
+db(db.product.code == '90')
+db(db.product.code == '90').select('name')
+db(db.product.code == '90').select('name')[0]['name']
+db(db.product.code == '90')
+db(db.product.code == '900')
+if db(db.product.code == '900'): 'ok'
+pass
+if db(db.product.code == '900'): 'ok' pass
+if db(db.product.code == '900'):
+    print 'ok'
+else:
+    print 'falso'
+if db(db.product.code == 900):
+    print 'ok'
+else:
+    print 'falso'
+db(db.product.code == '900').select('name')[0]['name']
+print db(db.product.code == '900').select('name')[0]['name']
+print db(db.product.code == '90').select('name')[0]['name']
+query = db.product
+print query
+print db(query)
+print db(query).select()
+print db(query).select('code')
+print db(db.product.code == 90) 
+print db(db.product.code == 900) 
+print db(db.product.code == 90).select() 
+print db(db.product.code == 900).select() 
+print db(db.product.code == 900).select('name') 
+print db(db.product.code == 900).select('name') [0]
+print db(db.product.code == 900).select('name')[0]
+print db(db.product.code == 90).select('name')[0]
+print db.product
+print db(db.product)
+print db(db.product.id>0)
+query = db(db.product.id>0)
+query.code == "90"
+db(query.code == "90")
+(query.select('code') == "90")
+(query.select('code'))
+db(db.product).select('code','name')
+print db(db.product).select('code','name')
+print db(db.product).select()
+print db(db.product).select('name')
+print db(db.product).select('name')[0]['name']
+print db(db.product).select('name')
+for item in db(product):
+    item
+for item in db(product).select():
+    item
+for item in db(product).select():
+    item
+for item in db(db.product).select():
+    item
+for item in db(db.product).select():
+    item.name
+db.product
+db.product[90]
+print db.product[90]
+product =  db.product[90]
+print product
+product = db.product
+print product
+db(db.product)
+db(db.product.id == 90).select('unit_price')
+db(db.product.code == 90).select('unit_price')
+db(db.product.code == 90).select('unit_price')[0]['unit_price']
+db(db.product.code == 90).select()[0]['unit_price']
+db(db.product.code == 90)[0]['unit_price']
+db(db.product.code == 90).select('unit_price')[0]['unit_price']
+product = db(db.product)
+product.id == 90
+product = db(db.product).select()
+product.code == 90
+print product
+print product.name
+print product.name[0]
+print product
+print product.code
+print product.code == 90
+print product[0].code
+product.code == 90
+for produto in product:
+    print produto.code
+ [produto for in product.code]
+ [produto for in product.code:]
+ produto for in product.code
+produto for in product.code
+codigo = lambda row: row.product.code == 90
+print codigo
+print codigo.name
+codigo
+print codigo[0]
+print codigo
+product = db(db.product).select()
+for produto in product:
+    produto
+for produto in product:
+    produto.code == 90
+for produto in product:
+    if produto.code == 90:
+        print produto.name
+session.cart
+print session.cart
+quit
+quit()
+codigo = lambda row: row.product.code == 90
+codigo
+product = db(db.product).select()
+print db(db.product).select()
+print db(db.product).select('unit_price')
+print db(db.product.date_create.like == '%2016%').select('unit_price')
+print db(db.product.date_create.like('%2016%')).select('unit_price')
+print db(db.product.date_create.like('%2016%')).select('date_create')
+print db(db.product.date_create.like('%56:38%')).select('date_create')
+print db(db.product.date_create.like('%56:05%')).select('date_create')
+print db(db.product.date_create.like('2016-09%')).select('date_create')
+print db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')
+print [lambda x: db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')]
+print db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')
+print sum(db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')
+print sum( x for x in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print sum( x for x in [2,3,5])
+print sum( x for x in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print sum( x for x in float(db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')))
+print sum( float(x) for x in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print  for x in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')
+print sum( float(x) for x in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')
+print sum(db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print sum(float(db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')))
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'):
+    print n
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')[0]['valor_subtotal']:
+    print n
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')[0]['valor_subtotal']:
+    print n
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'):
+    print n[0]['valor_subtotal']
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'):
+    print n[0]
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'):
+    print n
+for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'):
+    print n['valor_subtotal']
+(n[0] for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print (n[0] for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print (n for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal'))
+print [n for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')]
+print [n[0] for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')]
+print [n['valor_subtotal'] for n in db(db.historico_venda.date_create.like('2016-09%')).select('valor_subtotal')]
+for n in db(db.historico_venda):
+    print n
+for n in db(db.historico_venda).select():
+    print n
+for n in db(db.historico_venda).select('nome_representante'):
+    print n
+for n in db(db.historico_venda).select('status_operacional'):
+    print n
+q
+quit()
+for n in db(db.historico_venda).select('status_operacional'):
+quit()
+for n in db(db.historico_venda).select('status_operacional'):
+print db(db.historico_venda).select('status_operacional')
+for n in db(db.historico_venda).select('status_do_operacional'):
+    print n
+for n in db(db.historico_venda).select('status_do_operacional'):
+    print n.select('status_do_operacional')
+for n in db(db.historico_venda):
+    print n.select('status_do_operacional')
+for n in db(db.historico_venda):
+    print n
+for n in db(db.historico_venda):
+for n in db(db.historico_venda):
+    print n
+    print n
+for n in db(db.historico_venda):
+    print n
+for n in db(db.historico_vendas):
+    print n
+for n in db(db.historico_vendas):
+    print n.select('status_do_operacional')
+for n in db(db.historico_vendas).select():
+    print n
+for n in db(db.historico_venda).select():
+    print n
+db(db.historico_venda)
+    print n['status_do_operacional']
+for n in db(db.historico_venda).select():
+    print n['status_do_operacional'].update('pendente')
+for n in db(db.historico_venda).select():
+    db(db.n['status_do_operacional']).update('pendente')
+for n in db(db.historico_venda).select():
+    n.update(status_do_operacional='pendente')
+for n in db(db.historico_venda).select():
+    n['status_do_operacional']
+for n in db(db.historico_venda).select():
+for n in db(db.historico_venda).select():
+    db(n).update(status_do_operacional='pendente')
+for n in db(db.historico_venda).select():
+for n in db(db.historico_venda).select('status_do_operacional'):
+    print n
+for n in db(db.historico_venda).select('status_do_operacional'):
+    print n.update('dd')
+for n in db(db.historico_venda).select('status_do_operacional'):
+    n.update('dd')
+for n in db(db.historico_venda).select('status_do_operacional'):
+    db(n).update(status_do_operacional='ddd')
+for n in db(db.historico_venda).select('status_do_operacional'):
+    print n
+for n in db(db.historico_venda):
+    print n
+for n in db(db.historico_venda):
+    print db(n).select()
+for n in db(db.historico_venda):
+    print db(n).select('tipo_pagamento')
+db(db.historico_venda).update(status_do_operacional='pendente'):
+db(db.historico_venda.id>0).update(status_do_operacional='pendente'):
+db(db.historico_venda.id == 10).update(status_do_operacional='pendente'):
+db(db.historico_venda.id>0).update(status_do_operacional='pendente')
+db.commit()
+db(db.historico_venda.id>0).update(status_do_operacional='separando')
+db.commit()
+db(bd.empresa)
+db(db.empresa)
+quit()
+db(db.empresa)
+db(db.empresa.id>0).select()
+db(db.empresa.id>0)
+if db(db.empresa.id>0):
+    print 55
+db(db.empresa.id>0).select('nome')
+db(db.empresa).select('nome')
+db(db.empresa.id>0).select('nome')
+print db(db.empresa.id>0).select('nome')
+print db(db.empresa.nome == '').select('nome')
+print db(db.empresa.id>0).select()
+print db(db.empresa.id>0).select('name')
+print db(db.empresa)
+print db(db.empresa).length
+print db(db.empresa).length()
+print db(db.empresa.id>0).length()
+print db(db.empresa.id>0)
+dir(db(db.empresa.id>0))
+db(db.empresa.id>0).count()
+if db(db.empresa.id>0).count():
+    print 4444
+if db(db.empresa.id>0).count() == 0:
+    print 4444
+if db(db.empresa).insert(name='Story')
+db(db.empresa).insert(name='Story')
+db(db.empresa.insert(name='Story'))
+if db(db.empresa.id>0).count() == 0:
+    print 4444
+if db(db.empresa.id>0).count() > 0:
+    print 4444
+quit()
+db(db.empresa.id=='):
+db(db.empresa.id==0):
+db(db.empresa.id==0)
+db(db.empresa.id==0).select()
+db(db.empresa.id==1).select()
+empresa = db(db.empresa.id==1).select()
+empresa['name']
+empresa['nome']
+empresa
+empresa[0]
+empresa[0]
+empresa = db(db.empresa.id==1).select()[0]
+empresa = db(db.empresa.id==1).select()[0]
+db(db.empresa.id==1).select()[0]
+db(db.empresa.id==2).select()[0]
+try: empresa = db(db.empresa.id==2).select()[0] 
+catch: 
+if db(db.empresa.id==2).select()[0]: 
+else:
+    print 'falha'
+empresa = db(db.empresa.id==1).select()[0] 
+empresa
+empresa['cliente']
+db(db.historico_venda.update(nome_cliente = 1))
+db(db.historico_venda).update(nome_cliente = 1)
+db.commit()
+db(db.historico_venda).update(nome_representante = 3)
+db.commit()
+db(db.registration)
+db(db.registrations)
+db(db.registration)
+db(db.registration.name.like="jose")
+db(db.registration.name.like="%jose%")
+db(db.registration.name.like=="%jose%")
+db(db.registration.name).like=="%jose%"
+db.registration.name.like=="%jose%"
+dir(db.registration.name)
+dir(db.registration.name.like)
+help(db.registration.name.like)
+like(db.registration.name,"%jose%", case_sensitive=True, escape=None)
+like(db.registration.name,"%jose%", case_sensitive=True)
+like(db(db.registration.name),"%jose%", case_sensitive=True)
+db(db.registration)
+db(db.registration.name.like('%jos%'))
+db(db.registration.name.like('%jos%')).select()
+db(db.registration.name.like('jos%')).select()
+db(db.registration.name.like('jose v%')).select()
+db(db.registration.name.like('josev%')).select()
+db(db.registration.name.like('%s%'%"jose")).select('id')[0]['id']
+db(db.registration.name.like("jose","%")).select('id')[0]['id']
+db(db.registration.name.like("jose")).select('id')[0]['id']
+db(db.registration.name.like("jose")).select('id')
+db(db.registration.name.like("%s%"%"jose")).select('id')
+db(db.registration.name.like("jose","%")).select('id')
+db(db.registration.name.like("jose%")).select('id')
+db(db.registration.name.like()).select('id')
+d = "%s"%"jose"
+db(db.registration.name.like(d)).select('id')
+d = "jose"
+db(db.registration.name.like(d)).select('id')
+db(db.registration.name.like("jose%")).select('id')
+print db(db.registration.name.like("jose%")).select('id')[0]
+print db(db.registration.name.like("jose%")).select('id')
+print db(db.registration.name.like("jose%")).select('id').id
+print db(db.registration.name.like("jose%"))[0].select('id')
+print db(db.registration.name.like("jose%")[0]).select('id')
+print db(db.registration.name.like("jose%")).select('id')[0]['id']
+print db(db.registration.name.like(d)).select('id')[0]['id']
+d = "jose%"
+print db(db.registration.name.like(d)).select('id')[0]['id']
+d = "%s"%"jose"
+print db(db.registration.name.like(d)).select('id')[0]['id']
+d = "%s%"%"jose"
+d
+d = "%s\%"%"jose"
+d = "%"
+d
+d = "jose","%"
+d
+d = ("jose","%")
+d
+d = "jose"+"%"
+d
+historico = db(db.historico_venda.id == 19).select()[0]
+historico
+historico['representante']
+historico['id_representante']
+historico['nome_representante']
+historico = db(db.historico_venda.id == 31).select()[0]
+historico['nome_representante']
+historico['nome_representante']['name']
+historico['nome_representante']
+historico = db(db.historico_venda.id == 31).select()[0]
+historico.name
+historico
+historico['parcelas']
+quit()
+historico = db(db.historico_venda.id == 31).select()[0]
+historico
+historico['nome_prepresentante']['name']
+historico['nome_prepresentante']
+historico = db(db.historico_venda.id == 31).select()[0]
+historico
+historico['nome_prepresentante']
+historico['nome_prepresentante'].nome
+historico = db(db.historico_venda.id == 31).select()[0]
+historico
+historico['nome_cliente']
+historico['nome_representante']
+historico['nome_representante']['name']
+historico['nome_cliente']
+db(db.registration.inset(ativo=True))
+db(db.registration.insert(ativo=True))
+dir(db(db.registration))
+db(db.registration.update(ativo=True))
+db(db.registration.ativo.update(True))
+dir(db(db.registration))
+dir(db.registration)
+db(db.registration.keys)
+db(db.registration)
+db(db.registration).update(ativo=True)
+quit()
+db(db.registration).update(ativo=True)
+db.commit()
+db(db.product).update(ativo=True)
+quit
+quit()
+db(db.product).update(ativo=True)
+db(db.historico_venda).update(ativo=True)
+quit()
+db(db.historico_venda).update(ativo=True)
+db(db.product).update(ativo=True)
+db.commit()
+db(db.historico_venda.id == 30).select()[0]
+itens = db(db.historico_venda.id == 30).select()[0]['itens']
+itens
+print itens
+for iten in itens:
+    print iten
+for iten in itens:
+    iten
+itens = db(db.itens)
+itens = db(db.itens).select()
+itens
+for iten in itens:
+    print iten
+itens = db(db.itens.codigo_venda == 30).select()
+for iten in itens:
+    print iten
+for iten in itens:
+    print iten['nome_produto']
+itens = db(db.itens.codigo_venda == 30).select()
+for iten in itens:
+    print iten['nome_produto']
+db(db.historico_venda.qtd_parcelas == None).update(qtd_parcelas == 0)
+db(db.historico_venda.qtd_parcelas == 'None').update(qtd_parcelas == 0)
+db(db.historico_venda.qtd_parcelas == None)
+db(db.historico_venda.qtd_parcelas == None).select()
+db(db.historico_venda.qtd_parcelas == None).update(0)
+db(db.historico_venda.qtd_parcelas == None).update(qtd_parcelas == '0')
+db(db.historico_venda.qtd_parcelas == None).select('id')
+db(db.historico_venda.qtd_parcelas == None).select('id')[0]
+for iten in db(db.historico_venda.qtd_parcelas == None).select('id')[0]:
+    print iten['id']
+db(db.historico_venda.qtd_parcelas == None).select('id')
+for iten in db(db.historico_venda.qtd_parcelas == None).select('id'):
+    print iten['id']
+for iten in db(db.historico_venda.qtd_parcelas == None).select('id'):
+    db(db.historico_venda.id == iten['id']).update('0')
+db(db.itens.codigo_venda == 33).select()
+db(db.parcelas.codigo_venda == 33).select()
+for parcela in db(db.parcelas.codigo_venda == 33).select():
+    print parcela['parcela']
+    print parcela['parcela'], parcela['codigo_venda']['tipo_pagamento']
+for parcela in db(db.parcelas.codigo_venda == 33).select():
+    print parcela['parcela'], parcela['codigo_venda']['tipo_pagamento']
+for parcela in db(db.parcelas.codigo_venda == 33).select():
+    print parcela['parcela'], parcela['valor_parcela']
+for parcela in db(db.parcelas.codigo_venda == 33).select():
+    print parcela['parcela'], parcela['valor_parcela'], parcela['data_vencimento']
+URL('static','db_clientes.csv')
+f = open(URL('static','db_clientes.cvs'))
+f = open("URL('static','db_clientes.cvs')","r")
+f = open("/story/static/db_clientes.cvs","r")
+ls
+f = open("db_clientes.cvs","r")
+request.folder
+import os
+f = open(os.path.join(request.folder,'private','db_clientes.csv), 'r')
+f = open(os.path.join(request.folder,'private','db_clientes.csv), "r")
+f = open(os.path.join(request.folder,'private','db_clientes.csv))
+f = open(os.path.join(request.folder,'private','db_clientes.csv','r'))
+f = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+for row in f:
+   print row
+f = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+f[0]
+f.readline()
+f.readline(0)
+f.readline[0]
+f.readline(0)
+f.readline()
+f.readlines()
+rows = f.readlines()
+rows
+rows = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+rows
+rows[0]
+rows[1]
+clear
+clear()
+clean()
+help
+help()
+help(clean)
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+for row in rows:
+    print row
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+rows[1]
+db(db.regitration.insert(code='222'))
+db(db.regitration).insert(code='222')
+db(db.registration).insert(code='222')
+db(db.registration)
+db(db.registration).insert(code=222)
+dir(db(db.registration))
+dir(db.registration)
+db.registration.insert(code=222)
+db.registration.id=13
+db.registration.id==13
+db(db.registration.id==13).select()
+print db(db.registration.id==13).select()
+db.registration
+quit
+quit()
+db.registration
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+import os
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+print rows[0]
+print rows[1]
+for row in rows:
+    print row
+for row in rows:
+    
+d
+rows[0]
+rows[0].index
+rows[0].index()
+rows[0]+1
+for row in rows:
+    row < 2
+for row in rows:
+d
+rows[0]
+quit()
+import os
+file = open(URL('private','db_clientes.csb'),'r')
+file = open(URL('private','db_clientes.csv'),'r')
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+rows[0]
+rows[0][0]
+rows[0][1]
+linha = rows[0].split(',')
+linha
+rows = file.readlines()
+rows
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+rows
+for row in rows:
+    linha =  row.split(',')
+    db.registration.insert(
+    code=linha[0],
+    tipo=linha[1],
+    status='cliente',
+    name=linha[2],
+    cel='|%s|'%linha[4],
+    fixo='|%s|'%linha[6],
+    email=linha[7],
+    cnpj_cpf = linha[8],
+    insc=linha[9],
+    cep=linha[10],
+    uf=linha[13],
+    bairro=linha[15],
+    cidade=linha[14],
+    endereco=linha[11],
+    numero=linha[12],
+    date_create=linha[16]
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readlines()
+rows[0]
+rows
+rows[0]
+rows[1]
+file
+file.readlines()
+rows[1]
+rows[2]
+rows.lenght()
+rows.count
+rows.count()
+rows
+rows[0]
+quit()
+import os
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+rows = file.readylines()
+rows = file.readlines()
+rows[0]
+rows
+clear()
+clear
+nt
+os.system('cls' if os.name == 'nt' else 'clear')
+cls
+clear
+cls
+os.system('cls' if os.name == 'nt' else 'clear')
+xxx = os.system('cls' if os.name == 'nt' else 'clear')
+xxx
+rows
+xxx
+rows
+row[0]
+rows[0]
+db(db.resitration).select()
+db(db.registration).select()
+print db(db.registration).select()
+print db(db.registration).select()[0]
+print db(db.registration).select()[1]
+print db(db.registration).select()[-1]
+db.registration.insert(code=5)
+print db(db.registration).select()[-1]
+db.registration.insert(code=rows[0][0])
+print db(db.registration).select()[-1]
+rows[0]
+import os
+rows[0][1]
+rows[0]
+rows[0][1]
+rows[0][0]
+rows
+file = open(os.path.join(request.folder,'private','db_clientes.csv'),'r')
+file
+print 
+import os
+file = open(os.path.join(request.folder))
+request.folder
+file = open(os.path.join(request.folder,'private','db_clientes.csb'))
+file = open(os.path.join(request.folder,'private','db_clientes.csv'))
+print file
+rows = file.readlines()
+print rows[0]
+print rows[1]
+print rows
+print rows[1]
+print rows[0]
+for row in rows:
+    print row[0]
+p
+nome = "30,camiseta"
+nome[0]
+print rows[0]
+for row in rows:
+    row = row.split(',')
+    print row[0]
+for row in rows:
+    print row[1]
+for row in rows:
+    row = row.split(',')
+    print row[1]
+for row in rows:
+    print row[0]," - ",row[1]
+for row in rows:
+    row = row.split(',')
+    print row[0]," - ",row[1]," - ",row[2], " - ",
+for row in rows:
+    row = row.split(',')
+rows[0]
+row = rows[0].split(',')
+row
+db(db.registration).insert(code=row[0])
+db.registration.insert(code=row[0])
+db.registration.insert(code=row[0],tipo=row[1])
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente")
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[4])
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[4],cel="|5|")
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[4],Cel="|5|")
+row[5]
+row[6]
+row[4]
+row[3]
+row
+row[2]
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4])
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4],fixo=row[6])
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4],fixo=row[6],email=row[7])
+row[7]
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4],fixo=row[6],email=row[7],cnpj_cpf=row[8])
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4],fixo=row[6],email=row[7])
+row[7]
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4],fixo=row[6],email=row[7],cnpj_cpf=row[8])
+db(db.registration).select('email')
+db(db.registration).select('email')[0]
+db(db.registration).select('email')[0]['email']
+print db(db.registration).select('email')[0]['email']
+print db(db.registration).select('email')[1]['email']
+print db(db.registration).select('email')[2]['email']
+print db(db.registration).select('email')
+print db(db.registration).select('email')[5]
+print db(db.registration).select('email')[10]
+print db(db.registration).select('email')[10]['email']
+db.registration.insert(code=row[0],tipo=row[1],status="Cliente",name=row[2],Cel=row[4],fixo=row[6],email=row[7],cnpj_cpf=row[8])
+quit()
+import so
+import os
+file = open(os.path.join(request.folder,'private','db_clientes.csv'))
+db.registration.insert(email="ddd")
+db.registration.insert(cod="ddd")
+db.registration.insert(cod=55)
+db.registration.insert(code=55)
+quit()
+db.registration.insert(email="jose@jose.com")
+quit()
+db.registration.insert(email="jose@jose.com")
+db.registration.insert(email="jose@josse.com")
+db.registration.update(email="jose@josse.com")
+db.registration.insert(email="jose@josse.com")
+db.registration.insert(email="jose@jossre.com")
+db.registration.email
+dir(db.registration.email)
+dir(db.registration.migrate = True)
+dir(db.registration)migrate = True
+db.registration.migrate = True
+db.registration.insert(email="jose@josse.com")
+quit()
+db.registration.migrate = True
+db.registration.insert(email="jose@josse.com")
+db.registration.insert(email="jose@josses.com")
+db.registration.insert(email="jose@josse.com")
+db.registration.insert(name="jose@josse.com")
+quit()
+db.registration.insert(email="jose@josse.com")
+db.commit()
+db.registration.insert(email="jose@josse.com")
+file
+import os
+file = open(os.path.join(request.folder,'private','db_cliente.csv'))
+file = open(os.path.join(request.folder,'private','db_clientes.csv'))
+rows = file.split(',')
+rows = file.readlines()
+row = rows.split(',')
+rows
+rows[0]
+row = rows[0].split(',')
+rows
+row = rows[0]
+row
+linha = row.split(',')
+linha
+db.registration.insert(email="jose@josse.com")
+db.registration.insert(email="jose@josse.com",code=55)
+"()"
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],)
+linha[7]
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8])
+linha[8]
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],cep=linha[9])
+linha[9]
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10],uf=linha13,bairro=linha[15])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10],uf=linha[13],bairro=linha[15])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10],uf=linha[13],bairro=linha[15],cidade=linha[14])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10],uf=linha[13],bairro=linha[15],cidade=linha[14],endereco=linha[11])
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10],uf=linha[13],bairro=linha[15],cidade=linha[14],endereco=linha[11],date_create=linha[16])
+db(db.registration).select()[-1]
+db.registration.insert(code=linha[0],tipo=linha[1],status="Cliente",name=linha[2],cel=linha[4],fixo=linha[6],email=linha[7],cnpj_cpf=linha[8],insc=linha[9],cep=linha[10],uf=linha[13],bairro=linha[15],cidade=linha[14],endereco=linha[11],date_create=linha[16])
+file = open(os.path.join(request.folder,'private','db_historicoVenda.csv'))
+file = open(os.path.join(request.folder,'private','db_historicoVendas.csv'))
+rows = file.readlines()
+rows[0]
+file = open(os.path.join(request.folder,'private','db_produtos.csv'))
+rows[0]
+file = open(os.path.join(request.folder,'private','db_produtos.csv'))
+rows[0]
+file = open(os.path.join(request.folder,'private','db_produtos.csv'))
+rows[0]
+file = open(os.path.join(request.folder,'private','db_produtos.csv'))
+rows[1]
+rows
+rows = file.readlines()
+rows
+rows[1]
+rows[0]
+row = rows[0].split(',')
+rows
+row[0]
+row[1]
+row[2]
+row[0]
+row
+row[3]
+row[2]
+db.produt.insert(name=row[2],code=row[1],unit_price=row[3])
+db(db.product.id == 1).select()
+print db(db.product.id == 1).select()
+file = open(os.path.join(request.folder,'private','db_representantes.csv'))
+file = open(os.path.join(request.folder,'private','db_historicoVendas.csv'))
+rows = file.readlines()
+rows[0]
+db.historico_vendas.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])),tipo_paramento=row[4])
+db.historico_vendas.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2],valor_total=row[5],desconto_valor=row[6])
+db.historico_vendas.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])),tipo_paramento=row[4])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])),tipo_paramento=row[4])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2],valor_total=row[5],desconto_valor=row[6])
+db.historico_venda.insert(codigo_venda=row[1])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2],valor_total=row[5])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=row[3],nome_representante=row[2])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=row[3])
+db.historico_venda.insert(codigo_venda=row[1])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=row[3])
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=integer(row[3]))
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=integer3)
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=3)
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=int(row[3]))
+db.historico_venda.insert(codigo_venda=row[1],nome_cliente=integer(row[3]))
+row[3]
+row
+rows
+row
+file = open(os.path.join(request.folder,'private','db_historicoVendas.csv'))
+rows = file.readlines()
+rows[0]
+rows
+rows[0]
+row = rows[0]
+row = row.split(',')
+row
+row[3]
+db.historicoVenda.insert(nome_cliente = row[3])
+db.historicoVenda.insert(nome_cliente = 3)
+db.historico_venda.insert(nome_cliente = row[3])
+row
+row[4]
+db.historico_venda.insert(tipo_pagamento = row[3])
+db.historico_venda.insert(tipo_pagamento = row[4])
+row[3]
+row[2]
+rows
+for row in rows:
+    print row[2]
+for row in rows:
+    row = row.split(',')
+    print row[2]
+for row in rows:
+    row = row.split(',')
+    print row[3]
+rows
+rows[0]
+row
+import os
+file = open(os.path.join(request.folder,'private','db_historicoVendas.csv'))
+file.readline()
+row = (file.readline()).split(',')
+row
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=int(row[3]),nome_representante=row[2],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])),tipo_pagamento=row[4])
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=int(row[3]),nome_representante=row[2],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])))
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=int(row[3]),nome_representante=row[2],valor_total=row[5],desconto_valor=row[6])
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=int(row[3]),nome_representante=row[2],valor_total=row[5])
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=386,nome_representante=0003,valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])))
+db.historico_venda.insert(codigo_venda=int(row[1]),valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])))
+row
+db.historico_vendas
+db.historicoVendas
+db.historico_venda.insert(nome_cliente=5)
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=5,valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])))
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=row[2],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])))
+db.historico_venda.insert(codigo_venda=int(row[1]),nome_cliente=row[3],valor_total=row[5],desconto_valor=row[6],valor_subtotal=(float(row[5])-float(row[6])))
+db(db.historico_venda.code == 314).select()  
+db(db.registration.code == 314).select()  
+quit
+quit()
+import os
+file = open(os.path.join(request.folder,'private','settings.txt'))
+file.readline()
+file.readline(2)
+file.readline(0)
+file.readline(1)
+file.readline()
+file.readlines()
+file = open(os.path.join(request.folder,'private','settings.txt'))
+file.readlines()
+file.readlines()[0]
+file.readlines()
+file = open(os.path.join(request.folder,'private','settings.txt'))
+file.readlines()
+file
+file = open(os.path.join(request.folder,'private','settings.txt'))
+file = file.readlines()
+file
+file[0]
+file[0].upper()

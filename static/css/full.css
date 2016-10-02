@@ -1,0 +1,122 @@
+/*color bar*/
+/*.navbar-default {
+    background-color: #C4EF93 !important;
+    border-color: #A0DA5E !important;
+}
+.footer {
+    background: #C4EF93 !important;
+    color: #003802 !important;
+}
+#web2py-logo {
+    color: #003802 !important;
+}
+.collapse ul li a {
+    color: #657966 !important;
+}*/
+/*fim color bar*/
+.box_aviso_autorizacao {
+    text-align: center;
+}
+.btn_style_1 {
+    font-size: 22px;
+    margin: 19px 0 12px 0;
+}
+.jumbotron{
+	padding: 0px;
+	text-align: center;
+}
+.form_style_1{
+    padding: 58px;
+}
+img#logo_bar {
+    width: 63px;
+    margin-left: 8px;
+    margin-top: 1px;
+    border-radius: 7px;
+}
+.codigoError{
+    border-color: #E91E63 !important;
+    color: #E91E63;
+    background-color: #F9EBF0;
+}
+div#minhaTabela_wrapper {
+    margin-bottom: 21px !important;
+}
+
+/*==================  TABELA ====================*/
+.center{
+	text-align: center;
+}   
+.left{ text-align: left; }
+td {
+    vertical-align: middle !important;
+}
+
+table#minhaTabela {
+	border: none;
+}
+table#minhaTabela thead tr, table#minhaTabela thead td {
+	border: none;
+}
+
+input[type="search"] {
+    border-radius: 6px;
+    height: 44px;
+    width: 192px;
+}
+select[name=minhaTabela_length],select[name=tableHistorico_length] {
+    height: 44px;
+    background: none;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+/* botoes virtual do crud das tabelas */
+a.btt {
+    background-color: #F8F5F0;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 5px;
+}
+	a.b_view{
+		color: #30BDFD;
+	}
+	a.b_edit{
+		color: #4CAF50;
+	}
+	a.b_delet{
+		color: #FF3829;
+	}
+
+
+
+/*================== FIM TABELA ====================*/
+
+
+/*================== TABLE VIEW  ====================*/
+ul.table_view{
+	list-style: none;
+	font-size: 28px
+}
+ul.table_view li {
+    margin-bottom: 7px;
+}
+ul.table_view span {
+	font-style: italic;
+}
+ul li .header_table_view {
+    width: 155px;
+    float: left;
+    text-align: right;
+    padding-right: 13px;
+    color: #9E9E9E;
+}
+span.val {
+    color: #4CAF50;
+}
+img.picture_product {
+    border-radius: 10px;
+}
+/*================== FIM TABLE VIEW ====================*/
+
+
+

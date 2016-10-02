@@ -1,0 +1,41 @@
+{{extend 'layout_etiquetas.html'}}
+
+{{block header}}
+	<link rel="stylesheet" href="{{=URL('static','css/historico/printEtiqueta.css')}}"/>
+	<script>
+		$(document).ready(function(){
+			var cliente_id = {{=code}};
+			// qtd pacotes
+			$('#gerar').on('click',function(){
+				
+				if ($('#qtd').val() != '') {
+
+				// remove o erro do input
+				$('#qtd').removeClass('codigoError');
+					// disabilitar o botao imprimir
+					$("#btImprimir").attr('disabled',false);
+					$('#load_etiqueta img').show(); //load 
+					$('#load_etiqueta h2').hide(); //titulo
+					// chamar a grid com as etiquetas
+					
+					$('#transitory').val(($('#qtd').val())+";"+cliente_id);
+					ajax('etiquetas_print',['transitory'],'etiquetas')
+				}else{
+					// add erro ao input
+					$('#qtd').addClass('codigoError');
+					console.log('sem valor');
+				}	
+			});
+		});
+	</script>
+{{end}}
+
+{{block main}}
+    <input type="text" name="transitory" id="transitory" style="display: none"></input>
+	<div id="etiquetas">
+		<div id="load_etiqueta">
+			<h2>lista de etiquetas...</h2>
+			<img src="{{=URL('static','images/loadGif.gif')}}" alt="" >
+		</div>
+	</div>
+{{end}}

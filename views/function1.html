@@ -1,0 +1,25 @@
+{{def get_thumbnails(products):}}
+	<ul>
+	{{for product in products:}}
+
+			<li class="box_thumbnail">
+				<div class="thumbnail">
+				 	{{if product.thumbnail:}}
+				 		<img src="{{=URL('home','download',args=[product.thumbnail])}}" alt="...">
+				 	{{else:}}
+				 		<img  src="{{=URL('static','images','mini.png')}}" alt="...">
+				 	{{pass}}
+					
+					<div class="caption">	
+						<h3> {{=product.name}} </h3>
+							<p>
+							<span>{{=format_price(product.unit_price)}}</span>
+							</p>	
+							<a href="{{=URL('product','show',args=[slugfy(product)])}}" class="btn btn-primary" title="">Show</a>	
+					</div>	
+				</div>
+			</li>	
+	{{pass}}
+	</ul>
+{{return}}
+

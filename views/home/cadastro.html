@@ -1,0 +1,24 @@
+{{extend 'layout_1.html'}}
+
+{{block head}}
+<link rel="stylesheet" type="text/css" href="{{=URL('static','css/conta/cadastro.css')}}">
+{{end}}
+
+{{block main}}
+	<div class="row logo_reg">
+		<div  class="col-md-6 ">
+			<div class="logar">
+			{{=logo}}
+				  <h2>LOGIN</h2>
+				{{=login}}
+			</div>	
+		</div>
+		<div class="col-md-6 ">
+			
+			<div class="registrar">
+				  <h2>CADASTRO </h2>
+				  {{=cadastro}}
+			</div>
+		</div>
+	</div>
+{{end}}

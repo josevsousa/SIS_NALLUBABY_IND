@@ -1,0 +1,249 @@
+
+span.btn.btn-default.btn-lg.btn_style_1.featured_valor {
+    font-size: 41px;
+    background-color: #000000;
+}
+#cli_rep select{
+	width: 100%
+}
+
+form#addItem input, form#addItem button, form#addItem a {
+    margin: 0px 5px 11px 0px;
+    height: 56px;
+    font-size: larger;
+}
+form#addItem a#finalizar {
+    float: right;
+}
+
+input#codigo {
+    width: 130px;
+}
+input#produto {
+    width: 450px;
+}
+.item_gif img#load {
+    margin-bottom: 8px;
+    display: none;
+    width: 46px;
+    position: absolute;
+    top: 8px;
+}
+tbody#grid_parcelas_db input {
+    border: none;
+}        
+div#submit_record__row input[type=submit] {
+    font-size: large;
+}
+#enviar{
+    width: 248px;
+    height: 65px;
+}
+/*========== ETAPA 2 ==========*/
+.list tr td:nth-child(1){
+    width: 60px;
+}       
+
+.list tr td:nth-child(3), .list tr td:nth-child(5) {
+    width: 145px;
+}
+.list tr td:nth-child(4), .list tr td:nth-child(6) {
+    width: 69px;
+    padding: 2px;
+    text-align: center;
+    padding-top: 6px;
+}
+div#total {
+    font-size: x-large;
+    font-weight: 500;
+    background: black;
+    color: #FFFFFF;
+    padding: 12px 14px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 57px;
+}
+
+a.btn.btn-danger.btn-xs.removebutton {
+    background: none;
+    color: red;
+    font-size: 16px;
+}
+#columnchart_values img#load {
+    margin: 6% 45%;
+}
+/**/
+.btn_style_2 {
+    display: inline-block;
+    font-size: 2em;
+    margin: 19px 4px 12px 0;
+    border-radius: 50px;
+    background-color: #DCDCDC;
+    padding: 6px 22px;
+    color: white;   
+}
+.etapa_ok{
+	background-color: #89EA74;
+}
+.etapa_edit{
+	background-color: #FFE28B;
+}
+
+.btn-vendas button, .btn-vendas input {
+    font-size: 29px;
+}
+
+#status a:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+#code, #qtd {
+    width: 130px !important;
+}
+a#finalizar {
+    margin: 18px 8px;
+    font-size: large;
+    float: right;
+}
+select#qtd_parcela {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+#desconto input {
+    width: 87px;
+    height: 41px;
+    display: inline;
+}
+.grade {
+    padding: 6px 24px;
+}
+span#label {
+    display: inline;
+    float: left;
+    margin: 11px 23px 0px 0px;
+}
+div#rp {
+    font-weight: bolder;
+    font-size: medium;
+    color: #79a736;
+}
+button#alterar {
+    margin-left: 20px;
+    border-radius: 50%;
+    font-size: larger;
+}
+#parcelas span {
+    float: left;
+    margin: 8px 47px 0 0;   
+}
+#parcelas select.radio-inline, #no_table_parcelas {
+    height: 38px;
+    width: 89px;
+    background: none;
+    border-radius: 4px;
+    border-color: #DFD7CA;
+}
+#box_2 span {
+    float: right;
+    font-weight: 700;
+    font-size: large;
+}
+.input_parcelas input {
+    border: none;
+    width: 100%
+}
+span#subTotal{
+    color: #30D00E;
+    font-size: 25px;
+    margin-top: -5px !important;
+}
+span>img {
+    width: 41px;
+    margin-top: -10px;
+}
+span#desconto_real {
+    color: #B5B5B5;
+}button#aplicar {
+    float: right;
+    border-radius: 3px;
+}
+.aplicando {
+    border: 1px solid #f47c3c !important;
+    background: rgba(179, 63, 2, 0.05) !important;
+    color: #C34400;
+}
+#n3 {
+    background-color: #FFDD7D;
+}
+.btn-vendas>img {
+    width: 62px;
+    display: none;
+}
+
+/*========== NEW FORM ==========*/
+form#form_add_new label {
+    /*display: none;*/
+}
+form#form_add_new input {
+    margin: 0px 3px;
+    height: 50px;
+}
+#no_table_codigo, #no_table_qtd {
+    width: 130px !important;
+}
+
+/*check do envio de email na etapa_3*/
+div#envair_email {
+    float: left;
+    margin-bottom: 10px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    margin: 4px 3px 0 0;
+}
+input[type="email"] {
+    width: 333px;
+    border: 1px solid #dcdcdc;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+#tipo_pagamento span {
+    color: red;
+    float: right;
+    font-size: x-large;
+    display: none;
+}
+input#grid_parcelas {
+    width: 108px;
+}
+
+img#load_1 {
+    margin-left: 42%;
+    margin-top: 26px;
+}
+#tipo_pagamento tr {
+    float: left;
+    margin-right: 28px;
+}
+li#tipo_pagamento {
+    height: 54px;
+}       
+li#tipo_pagamento label{
+    font-weight:100 !important;
+}
+select#no_table_parcelas {
+    padding-top: 9px;
+}
+div#box_1, div#box_2 {
+    min-height: 182px;
+}
+
+/*valida inputs forms*/
+.erro_my_form {
+    border: 1px solid red !important;
+    color: red !important;
+    background: rgba(250, 215, 215, 0.35) !important;
+}

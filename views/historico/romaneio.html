@@ -1,0 +1,30 @@
+{{extend 'layout_print.html'}}
+
+{{block header}}
+	<link rel="stylesheet" href="{{=URL('static','css/historico/romaneio.css')}}"/>
+{{end}}
+
+
+{{block featured}}
+	<div class="row">
+		<div class="logo">
+			{{=logo}}
+		</div>
+		<div class="titulo">
+			{{=empresa_dados}}
+		</div><!--fim do col-md-10-->	
+	</div><!--fim do row-->
+{{end}}
+
+{{block main}}
+	<!-- cod representante -->
+	{{=representante}}
+	<!-- cliente -->
+	{{=cliente}}
+	<!-- lista de itens -->
+	{{=lista}}
+	<!-- grid price -->
+	{{=grid_price}}
+
+	<div class='end' style='display:none'><h4>{{=site}}</h4></div>
+{{end}}

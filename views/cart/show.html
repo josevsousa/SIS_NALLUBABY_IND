@@ -1,0 +1,64 @@
+{{extend 'layout_1.html'}}
+
+
+{{block head}}
+	<style>
+		.list tr td:nth-child(1){
+			width: 32px;
+			padding: 2px;
+			color:white;
+		}		
+		.list tr td:nth-child(6), .list tr td:nth-child(4) {
+		    width: 69px;
+		    padding: 2px;
+		    text-align: center;
+		    padding-top: 6px;
+		}
+		#total{
+			float: right;
+    		margin-right: 21px;
+		}
+		#bts_f{
+    		margin-left: 24px;
+		}
+	</style>
+
+
+	<script>
+		$(document).ready(function(){
+			$(".removebutton").on("click", function(){
+				id = $(this).attr('data'); // URL(controller,function,args) 
+				$("#transitory").val(id);	
+				if (confirm('Deseja mesmo apagar o item?')) {
+					ajax('remove', ['transitory'], ':eval');   // :evel "o retorno é pra essa pagina"
+				}
+			});
+
+		});
+	</script>
+
+{{end}}
+
+{{block main}}
+
+<div class="container">	
+	<div>
+		{{=table}}
+	</div>	
+	<div class="row">
+		<div id="total">
+			<h3>TOTAL:{{=total}}</h3>
+		</div>	
+		<div id="bts_f">
+			{{=A('Buy mure', _class="btn btn-default", _href=URL('home', 'index'))}}
+			{{=A('Checkout', _class="btn btn-success", _href=URL('cart', 'checkout'))}}
+		</div>	
+	</div>
+	<div id="alert">
+	<!-- 	<div class="alert alert-warning alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+	 	</div> -->
+	</div>
+</div>
+{{end}}

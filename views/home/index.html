@@ -1,0 +1,32 @@
+{{extend "layout_1.html"}}
+
+
+{{block featured}}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+		<h1>System de gestão Nallubaby</h1>
+		</div>
+	</div>
+</div>		
+{{end}}
+
+{{block head}}
+    <!-- {{#include "function1.html"}} -->
+{{end}}
+
+<!-- manda pra o include do layout_3 -->
+{{block main}}
+	<div class="container " id="tela_registro">
+
+			<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Selecione a função desejada</h2>	
+		<div class="well center" id="registro_full">
+			<p>
+			  <a href="caixa/etapa_1" class="btn btn-success btn-lg">Caixa</a>
+			  <a href="historico/vendas" class="btn btn-default btn-lg">Historico</a>
+			  <a href="registration/tela_registration" class="btn btn-warning btn-lg">Cadastros</a>
+			</p>
+
+		</div>	
+	</div>
+{{end}}

@@ -1,0 +1,162 @@
+{{extend 'layout_1.html'}}
+{{block head}}
+<link rel="stylesheet" href="{{=URL('static','jquery-ui-1.12.0.custom/jquery-ui.css')}}">
+<link rel="stylesheet" href="{{=URL('static','css/caixa/etapa_2.css')}}">
+<script src="{{=URL('static','jquery-ui-1.12.0.custom/jquery-ui.js')}}"></script>
+<script>
+	$(document).ready(function(){
+		$("#qtd, #submit").attr('disabled',true); //desabilita produto
+		$('#codigo').focus();
+		  
+		//toda tabela 
+		var lista_NomeCodigo = [
+			{{for item in db(db.product).select('code','name','unit_price'):}}
+			 {code:"{{=item.code}}",name:"{{=item.name}}",valor:"{{=format_price(item.unit_price)}}"},
+			{{pass}}
+		];             
+		// lista de codigos 
+		var listaCodigoProdutos = [];
+			for(item in lista_NomeCodigo){
+			listaCodigoProdutos.push( lista_NomeCodigo[item].code ) 
+		}
+
+		// lista de nomes
+		var listaNomeProdutos = [];
+			for(item in lista_NomeCodigo){
+			listaNomeProdutos.push( lista_NomeCodigo[item].name+": "+(lista_NomeCodigo[item].valor) ) 
+		}
+
+		// completar produto
+		$( "#produto" ).autocomplete({
+  			source: listaNomeProdutos,
+  			select: function( event, ui ) {
+  				var nome = (ui.item.value).split(":")[0]
+  				
+  				//buscar code pelo name
+      	        var buscaCodigo = lista_NomeCodigo.filter(function(item){
+			        return item.name === nome ;
+			    }); 
+
+              	$('#codigo').removeClass('codigoError').val(buscaCodigo[0].code);
+              	$('#qtd').attr('disabled',false).focus();
+
+            }
+		}).on( "autocompletecreate", function( event, ui ) {} );;
+
+
+		// codigo
+		$('#codigo').on('change',function(){
+			ajax('valida_code',["codigo"],':eval');
+		});	
+
+		// qtd
+		$('#qtd').on('change', function(){
+			ajax('valida_qtd',['qtd'],':eval')			
+		})
+
+		// add produtos
+		$('#submit').on('click',function(){
+			//load
+			$('#load').show();
+			
+			//guarda os campos do botao 
+			var codigo = $('#codigo').val();
+			var qtd = $('#qtd').val();
+			var produto = $('#produto').val();
+
+			//limpa os campos do botao
+			$('#codigo, #qtd, #produto').val('');
+
+			//envia
+			$('#transitory').val(codigo+";"+qtd+";"+produto);
+			ajax('listaProdutos',['transitory'],':eval');	
+		})
+
+		// carrega a função que fica delegando um click no bt remover,
+		remove();
+
+	})
+
+	function remove(){
+		// remover item 
+		$(".removebutton").on("click", function(){
+			id = $(this).attr('data'); // URL(controller,function,args)
+
+			$("#transitory").val(id);	
+			if (confirm('Deseja mesmo apagar o item?')) { 
+				ajax('remove', ['transitory'], ':eval');   // :evel "o retorno é pra essa pagina"
+			}
+		});
+	};
+
+</script>
+{{end}}
+
+
+{{block featured}}
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 left">
+				<div id="status">
+					<a href="etapa_1" class="btn_style_2 etapa_ok">1</a>
+					<span class="btn_style_2 " id="n3">2</span>
+					<span class="btn_style_2 ">3</span>
+				</div>
+
+			</div>
+			<div class="col-md-6 left">
+				<h1>Add os itens</h1>
+			</div>
+			<div class="col-md-3">
+				<a href="etapa_3" id="finalizar" class="btn btn-success btn-lg">
+				   	<span class="glyphicon glyphicon-check" ></span>
+				   	caixa
+				</a> 
+				
+			</div>	
+		</div>
+	</div>
+</div>	
+{{end}}
+
+
+{{block main}}
+	<div class="container">	
+			<div class="row">
+
+				<div class="col-md-10">
+					<form class="form-inline" id="addItem">
+					  <div class="form-group">
+					    <input type="number" class="form-control input-lg" id="codigo" name="codigo" placeholder="cod">
+					  </div>
+					  <div class="form-group">
+					    <input type="number" class="form-control input-lg" id="qtd" name="qtd" placeholder="qtd">
+					  </div>
+					  <div class="form-group">
+					    <input type="text" class="form-control input-lg" id="produto" name="produto" placeholder="produto">
+					  </div>
+					  <button type="text" id="submit" class="btn btn-default btn-lg">
+					  	<span class="glyphicon glyphicon-shopping-cart" ></span>
+					  	 <span id="textoButton">Add Item</span></button>
+					  <div class="form-group item_gif">
+					  	<img src="{{=URL('static','images/loadGif.gif')}}" id="load" alt="">
+					  </div>
+					</form>
+				</div>
+				<div class="col-md-2">
+					<div id="total" class="featured_valor">
+						{{=total}}
+					</div>	
+				</div>
+
+			</div>		
+			
+			<div class="row">
+				<div class="col-md-12" id="table_list">
+					{{=table}}		
+				</div>
+			</div>
+		</div>	
+	</div>
+{{end}}

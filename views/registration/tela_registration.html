@@ -1,0 +1,32 @@
+{{extend 'layout_1.html'}}
+
+{{block head}}
+{{end}}
+
+{{block featured}}
+<input type="text" id="transitory" name="transitory" style="display: none"></input>
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+				<h1 id="title_status">Tela de cadastros</h1>
+
+		</div>
+	</div>
+</div>	
+{{end}}
+
+{{block main}}
+	<div class="container " id="tela_registro">
+
+			<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Selecione o tipo de cadastro</h2>	
+		<div class="well center" id="registro_full">
+			<p>
+			  <a href="../product/list" class="btn btn-success btn-lg">Produtos<span class='cont'>{{=tp}}</span></a>
+			  <a href="list?status=Cliente" class="btn btn-default btn-lg">Cliente<span class='cont'>{{=tc}}</span></a>
+			  <a href="list?status=Funcionario" class="btn btn-warning btn-lg">Funcionário<span class='cont'>{{=tf}}</span></a>
+			  <a href="list?status=Representante" class="btn btn-primary btn-lg">Representante<span class='cont'>{{=tr}}</span></a>
+			</p>
+
+		</div>	
+	</div>
+{{end}}

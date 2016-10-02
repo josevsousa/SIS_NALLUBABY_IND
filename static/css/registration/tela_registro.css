@@ -1,0 +1,17 @@
+div#tela_registro a {
+    font-size: 32px !important;
+    margin: 3px;
+}
+span.cont {
+    position: absolute;
+    font-size: 13px;
+    padding: 2px;
+    top: 0px;
+    right: 5px;
+}
+#registro_full a{
+	position: relative;
+}
+div#table_registro {
+    margin-bottom: 22px;
+}
