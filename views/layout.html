@@ -14,6 +14,25 @@
           user-scalable = yes allows the user to zoom in -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{=response.title or request.application}}</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="{{=URL('static','images/faviconFull/apple-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{=URL('static','images/faviconFull/apple-icon-60x60.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{=URL('static','images/faviconFull/apple-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{=URL('static','images/faviconFull/apple-icon-76x76.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{=URL('static','images/faviconFull/apple-icon-114x114.png')}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{=URL('static','images/faviconFull/apple-icon-120x120.png')}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{=URL('static','images/faviconFull/apple-icon-144x144.png')}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{=URL('static','images/faviconFull/apple-icon-152x152.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{=URL('static','images/faviconFull/apple-icon-180x180.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{=URL('static','images/faviconFull/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{=URL('static','images/faviconFull/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{=URL('static','images/faviconFull/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{=URL('static','images/faviconFull/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{=URL('static','images/faviconFull/manifest.json')}}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{=URL('static','images/faviconFull/ms-icon-144x144.png')}}">
+    <meta name="theme-color" content="#ffffff">
+
+
     <!-- http://dev.w3.org/html5/markup/meta.name.html -->
     <meta name="application-name" content="{{=request.application}}">
     <!-- Speaking of Google, don't forget to set your site up:
@@ -69,7 +88,7 @@
         </div>
       </div>
     </nav>
-    <!-- Masthead ===================================== -->    
+    <!-- Masthead ===================================== -->
     {{block header}}
     {{end}}
     <!-- Main ========================================= -->
@@ -102,7 +121,7 @@
 
     </div>
 
-    {{block footer}} <!-- this is default footer -->      
+    {{block footer}} <!-- this is default footer -->
     <footer class="footer">
       <div class="container-fluid">
         <div class="copyright pull-left">{{=T('Copyright')}} &#169; {{=request.now.year}}</div>

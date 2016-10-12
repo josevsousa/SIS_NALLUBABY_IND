@@ -1,0 +1,27 @@
+{{extend 'layout_M.html'}}
+
+{{block head}}
+{{end}}
+
+{{block header}}
+    <header data-role="header">
+        <!-- <a href="produtos" data-role="button" data-icon="arrow-l" data-rel="back" data-iconpos="left" data-inline="true">voltar</a> -->
+        <a href="#" data-rel="back"  class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1>Protudo</h1>
+    </header>
+{{end}}
+
+{{block main}}
+    <h2>{{=produto['name']}}</h2>
+    {{if produto.picture:}}
+        <img class="destaque_img" src="{{=URL('home', 'download', args=[produto.picture])}}" />
+    {{else:}}
+        <img class="destaque_img" src="{{=URL('static','images/no_picture.png')}}" />
+    {{pass}}
+    <h3>COD:  <small>{{=produto['code']}}</small> VALOR: <small class="price">{{=format_price(produto.unit_price)}}</small><h3>
+    <p>
+        Descrição
+    </p>
+{{end}}
+
+{{block footer}}{{end}}

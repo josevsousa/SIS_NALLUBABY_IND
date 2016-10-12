@@ -1,0 +1,28 @@
+{{extend 'layout_M.html'}}
+
+{{block head}}
+{{end}}
+
+{{block header}}
+    <header data-role="header">
+        <h1>Lista de produtos</h1>
+        <!-- <a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all">No text</a> -->
+    </header>
+{{end}}
+
+{{block main}}
+    <!-- ul produtos -->
+    <ul data-role="listview" data-inset="true" data-autodividers="true" data-filter="true" data-filter-placeholder="Search fruits...">
+        {{for row in rows:}}
+        <li><a href="produto_destaque/{{=row['id']}}"  data-transition="slide">
+            {{if row['thumbnail']:}}
+            <img src="{{=URL('home', 'download', args=[row.thumbnail])}}">
+            {{else:}}
+            <img src="{{=URL('static','images/no_picture.png')}}">
+            {{pass}}
+            <h2>{{=row.name}}</h2>
+            <p >cod:<i>{{=row.code}} </i>  <span class="product_price"> {{=format_price(row.unit_price)}}</span></p></a>
+        </li>
+        {{pass}}
+    </ul>
+{{end}}

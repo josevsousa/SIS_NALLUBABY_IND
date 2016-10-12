@@ -1,0 +1,18 @@
+.ui-content {
+    text-align: center;
+}
+img.destaque_img {
+    background: #F3F3F3;
+    border-radius: 9px;
+    width: 100% !important;
+}
+small {
+    color: #908E8E;
+}
+.price {
+    color: #0BBCC7;
+}
+.product_price {
+    color: #1F8692;
+    font-size: small;
+}

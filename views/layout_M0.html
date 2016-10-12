@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+      <!-- Always force latest IE rendering engine
+           (even in intranet) & Chrome Frame
+           Remove this if you use the .htaccess -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+      <!--  Mobile Viewport Fix
+            j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+            device-width: Occupy full width of the screen in its current orientation
+            initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+            user-scalable = yes allows the user to zoom in -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{=response.title or request.application}}</title>
+      <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+      <meta name="application-name" content="{{=request.application}}">
+      <!-- Speaking of Google, don't forget to set your site up:
+           http://google.com/webmasters -->
+      <meta name="google-site-verification" content="">
+      <!-- include stylesheets -->
+
+      <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+      <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+      <!-- All JavaScript at the bottom, except for Modernizr which enables
+           HTML5 elements & feature detects -->
+      <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+      <!--[if lt IE 9]>
+          <script src="{{=URL('static','js/respond-1.4.2.min.js')}}"></script>
+          <![endif]-->
+      <!-- Favicons -->
+      <!-- Favicons -->
+      {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+      <!-- css -->
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/jquery.mobile-1.4.5.css')}}" media="screen" title="no title">
+      <!-- <link rel="stylesheet" href="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css"> -->
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.css')}}">
+    <link rel="stylesheet" href="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.theme.css')}}">
+      <!-- js -->
+      <script src="{{=URL('static','jquery.mobile/jquery.mobile-1.4.5.js')}}" charset="utf-8"></script>
+
+      <script src="{{=URL('static','js/datepicker.js')}}"></script>
+      <!-- <script id="mobile-datepicker" src="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script> -->
+      <script id="mobile-datepicker" src="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.js')}}"></script>
+      {{block head}}{{end}}
+
+  </head>
+    <body>
+        <div data-role="page" >
+            {{block header}}
+                <header data-role="header">
+                    <h1>{{=file_settings[0]}}</h1>
+                    <a href="#" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all">No text</a>
+                </header>
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="produtos.html" data-transition="flip">Produtos</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                    </ul>
+                </nav>
+            {{end}}
+            <section data-role="content">{{block main}}{{end}}</session>
+
+            {{block footer}}
+                <footer data-role="footer" data-position="fixed">
+                    <!-- <nav data-role="navbar">
+                        <ul>
+                            <li><a href="localizacao.html">Localização</a></li>
+                            <li><a href="empresa.html">Empresa</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav> -->
+                    <small class="ui-bar">&#169 2016 Totos os direitos Reservados</small>
+                </footer>
+            {{end}}
+        </div>
+    </body>
+</html>

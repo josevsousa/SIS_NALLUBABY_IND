@@ -75,25 +75,25 @@ def GRID_HISTORICO(cod):
 	for iten in itens_itens:
 		tbody_itens.append(
 			TR( 
-				TD(iten['codigo_produto']),
-				TD(iten['nome_produto']),
-				TD(iten['qtd']),
-				TD(format_price(iten['valor_uni_item'])),
-				TD(format_price(iten['valor_total_item'])),
+				TD(iten['codigo_produto'],_class="ref_"),
+				TD(iten['nome_produto'],_class="des_"),
+				TD(iten['qtd'], _class="qtd_"),
+				TD(format_price(iten['valor_uni_item']),_class="pre_"),
+				TD(format_price(iten['valor_total_item']),_class="tot_"),
 				)
 			)
 	grid_itens = TABLE(
 						THEAD(
 							TR(
-								TH("Ref",_class="tit_1"),
-								TH("Descrição",_class="tit_1"),
-								TH("Qtde",_class="tit_1"),
-								TH("Preço",_class="tit_1"),
-								TH("Total",_class="tit_1"),
+								TH("Ref",_class="tit_1 ref_"),
+								TH("Descrição",_class="tit_1 des_"),
+								TH("Qtde",_class="tit_1 qtd_"),
+								TH("Preço",_class="tit_1 pre_"),
+								TH("Total",_class="tit_1 tot_"),
 								)
 							),
 						tbody_itens,
-						_class="table table-bordered print_model_romaneio")
+						_class="table table-bordered print_model_romaneio", _id="grid_itens")
 
 	# total com ou sem parcelas
 	grid_price = DIV()

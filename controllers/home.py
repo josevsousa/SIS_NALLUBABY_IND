@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+
+# -------------------------
 def contact():
     form = FORM(
         INPUT(_type="text", _class="form-control", requires=IS_NOT_EMPTY(), _name="name", _placeholder="You name"),
@@ -17,7 +19,7 @@ def index():
     cliente = db(query.status == 'Cliente').count()
     return dict(cliente=cliente)
 
-def user(): 
+def user():
     """
     exposes:
     http://..../[app]/default/user/login
@@ -56,9 +58,9 @@ def download():
     return response.download(request, db)
 
 def conta():
-    # logo da table empresa. 
+    # logo da table empresa.
     logo = IMG(_src=URL('static','images/logo/logo_m.png'),_width='150px')
-    # registro.elements('input')[1].attributes['_class'] = "form-control" 
+    # registro.elements('input')[1].attributes['_class'] = "form-control"
     return dict(login=auth.login(),logo=logo)
 
 def cadastro():
@@ -67,9 +69,9 @@ def cadastro():
 
 def reset_passwold():
     logo = IMG(_src=URL('static','images/logo/logo_m.png'),_width='150px')
-    reset = auth.request_reset_password()  
+    reset = auth.request_reset_password()
     return dict(reset=reset,logo=logo)
 
 def nao_autorizado():
     logo ='ok'
-    return dict(logo=logo)    
+    return dict(logo=logo)

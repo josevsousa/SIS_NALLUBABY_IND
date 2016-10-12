@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+      <!-- Always force latest IE rendering engine
+           (even in intranet) & Chrome Frame
+           Remove this if you use the .htaccess -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+      <!--  Mobile Viewport Fix
+            j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+            device-width: Occupy full width of the screen in its current orientation
+            initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+            user-scalable = yes allows the user to zoom in -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>App Nallubaby</title>
+      <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+      <meta name="application-name" content="{{=request.application}}">
+      <!-- Speaking of Google, don't forget to set your site up:
+           http://google.com/webmasters -->
+      <meta name="google-site-verification" content="">
+      <!-- include stylesheets -->
+
+      <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+      <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+      <!-- All JavaScript at the bottom, except for Modernizr which enables
+           HTML5 elements & feature detects -->
+      <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+      <!--[if lt IE 9]>
+          <script src="{{=URL('static','js/respond-1.4.2.min.js')}}"></script>
+          <![endif]-->
+      <!-- Favicons -->
+      <!-- Favicons -->
+      {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
+      <!-- css -->
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/jquery.mobile-1.4.5.css')}}" media="screen" title="no title">
+      <!-- <link rel="stylesheet" href="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css"> -->
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.css')}}">
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.theme.css')}}">
+      <link rel="stylesheet" href="{{=URL('static','css/mobile/full.css')}}" media="screen" title="no title">
+      <!-- js -->
+      <script src="{{=URL('static','jquery.mobile/jquery.mobile-1.4.5.js')}}" charset="utf-8"></script>
+
+      <script src="{{=URL('static','js/datepicker.js')}}"></script>
+      <!-- <script id="mobile-datepicker" src="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js"></script> -->
+      <script id="mobile-datepicker" src="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.js')}}"></script>
+
+      <link rel="apple-touch-icon" sizes="57x57" href="{{=URL('static','images/faviconFull/apple-icon-57x57.png')}}">
+      <link rel="apple-touch-icon" sizes="60x60" href="{{=URL('static','images/faviconFull/apple-icon-60x60.png')}}">
+      <link rel="apple-touch-icon" sizes="72x72" href="{{=URL('static','images/faviconFull/apple-icon-72x72.png')}}">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{=URL('static','images/faviconFull/apple-icon-76x76.png')}}">
+      <link rel="apple-touch-icon" sizes="114x114" href="{{=URL('static','images/faviconFull/apple-icon-114x114.png')}}">
+      <link rel="apple-touch-icon" sizes="120x120" href="{{=URL('static','images/faviconFull/apple-icon-120x120.png')}}">
+      <link rel="apple-touch-icon" sizes="144x144" href="{{=URL('static','images/faviconFull/apple-icon-144x144.png')}}">
+      <link rel="apple-touch-icon" sizes="152x152" href="{{=URL('static','images/faviconFull/apple-icon-152x152.png')}}">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{=URL('static','images/faviconFull/apple-icon-180x180.png')}}">
+      <link rel="icon" type="image/png" sizes="192x192"  href="{{=URL('static','images/faviconFull/android-icon-192x192.png')}}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{=URL('static','images/faviconFull/favicon-32x32.png')}}">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{=URL('static','images/faviconFull/favicon-96x96.png')}}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{=URL('static','images/faviconFull/favicon-16x16.png')}}">
+      <link rel="manifest" href="{{=URL('static','images/faviconFull/manifest.json')}}">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="{{=URL('static','images/faviconFull/ms-icon-144x144.png')}}">
+      <meta name="theme-color" content="#ffffff">
+
+      {{block head}}{{end}}
+
+
+  </head>
+    <body>
+        <div data-role="page" >
+            {{block header}}
+                <header data-role="header">
+                    <h1>{{=(file_settings[0]).upper()}}</h1>
+                    <a href="login" class="ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all">No text</a>
+                </header>
+            {{end}}
+            <section data-role="content">{{block main}}{{end}}</session>
+
+            {{block footer}}
+            <footer data-position="fixed" data-role="footer" class="nav-glyphish-example">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="index.html"  data-icon="home">Home</a></li>
+                        <li><a href="produtos.html"  data-icon="grid" data-transition="flip">Produtos</a></li>
+                    </ul>
+                </nav>
+            </footer>
+            {{end}}
+        </div>
+    </body>
+</html>
