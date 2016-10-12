@@ -14,7 +14,7 @@
     <!-- ul produtos -->
     <ul data-role="listview" data-inset="true" data-autodividers="true" data-filter="true" data-filter-placeholder="Search fruits...">
         {{for row in rows:}}
-        <li><a href="produto_destaque/{{=row['id']}}"  data-transition="slide">
+        <li><a href="{{=URL('mobile','produto_destaque', args=[row['id']])}}"  data-transition="slide">
             {{if row['thumbnail']:}}
             <img src="{{=URL('home', 'download', args=[row.thumbnail])}}">
             {{else:}}
