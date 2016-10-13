@@ -16,3 +16,10 @@ small {
     color: #1F8692;
     font-size: small;
 }
+.home_img_logo {
+    border-radius: 50%;
+    border: 9px solid #EEEFEC;
+}
+.on{
+    background-color: #53FF2E !important;
+}

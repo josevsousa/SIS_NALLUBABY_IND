@@ -7,6 +7,9 @@
         table tbody tr td, table thead tr th {
             border: 1px solid #505050 !important;
         }
+        body, html{
+            margin: 0mm !important;
+        }
     }
 body {
     padding: 10px !important;
@@ -39,7 +42,7 @@ div#load_etiqueta h2 {
     font-size: 12px;
 }
 #grid_etiquetas>li ul {
-    width: 50% !important;
+    width: 100% !important;
     float: left;
     padding: 5px;
     margin-bottom: 9px;
@@ -50,8 +53,11 @@ address {
 }
 img {
     float: left;
-    width: 28%;
-    margin-right: 14px;
+    width: 16%;
+    margin: 17px 24px 27px 0px;
+}
+li.list-group-item.grid_etiquetas_titulo.destino {
+    font-size: large;
 }
 .limpar{
 	clear: both;

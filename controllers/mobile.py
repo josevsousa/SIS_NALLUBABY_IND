@@ -11,6 +11,7 @@ def index():
     response.flash = T("Hello World")
     return dict(message=T('Welcome to web2py!'))
 
+
 def produtos():
     query = db.product
     rows = db(query).select()
@@ -21,7 +22,10 @@ def produto_destaque():
     return dict(produto=produto)
 
 def login():
-    return dict(msg="jose")
+    # logo da table empresa.
+    logo = IMG(_src=URL('static','images/logo/logo_m.png'), _class="home_img_logo" ,_width='150px')
+    # registro.elements('input')[1].attributes['_class'] = "form-control"
+    return dict(login=auth.login(),logo=logo)
 
 def dialogo():
     return dict(msg="teste")

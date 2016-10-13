@@ -8,6 +8,15 @@ body{
     text-align: center;
     padding-top: 33px;
 }
+.ref_ {
+    width: 8% !important;
+}
+.des_ {
+    width: 59% !important;
+}
+.qtd_ {
+    width: 7% !important;
+}
 .titulo {
     float: left;
     text-align: center;
@@ -41,4 +50,4 @@ th.tit_1 {
 
 .container.print {
     margin-top: 35px;
-}    
+}

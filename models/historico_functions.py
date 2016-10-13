@@ -13,8 +13,8 @@ def grafico_receita():
 		# varre a tabela historico venda e soma todas as colunas valor_subtotal
 		total_mes = sum(n['valor_subtotal'] for n in db(db.historico_venda.date_create.like(seach)).select('valor_subtotal'))
 		total_meses.append(total_mes) # adiciona o resultado de cada soma a  array total_meses
-	
-	return total_meses	
+
+	return total_meses
 
 # historico
 def GRID_HISTORICO(cod):
@@ -28,7 +28,7 @@ def GRID_HISTORICO(cod):
 								TH("código",_class="tit_1"),
 								TD(historico['codigo_venda']),
 								TH("representante",_class="tit_1"),
-								TD(historico['nome_representante']['code'])	
+								TD(historico['nome_representante']['code'])
 								)
 							),
 						_class="table table-bordered print_model_romaneio")
@@ -40,7 +40,7 @@ def GRID_HISTORICO(cod):
 								TH("Cliente",_class="tit_1"),
 								TD(historico['nome_cliente']['name'] or ''),
 								TH("Tel",_class="tit_1"),
-								TD(historico['nome_cliente']['fixo'] or '')	
+								TD(historico['nome_cliente']['fixo'] or '')
 								),
 							TR(
 								TH("Bairro",_class="tit_1"),
@@ -74,7 +74,7 @@ def GRID_HISTORICO(cod):
 	tbody_itens = TBODY()
 	for iten in itens_itens:
 		tbody_itens.append(
-			TR( 
+			TR(
 				TD(iten['codigo_produto'],_class="ref_"),
 				TD(iten['nome_produto'],_class="des_"),
 				TD(iten['qtd'], _class="qtd_"),
@@ -98,7 +98,7 @@ def GRID_HISTORICO(cod):
 	# total com ou sem parcelas
 	grid_price = DIV()
 
-	# ver se tem parcelas add em grid_price 
+	# ver se tem parcelas add em grid_price
 	if historico['qtd_parcelas'] > 0:
 		table_pacelas= TABLE(						THEAD(
 							TR(
@@ -110,14 +110,14 @@ def GRID_HISTORICO(cod):
 		tbody_parcelas = TBODY()
 		for parcela in db(db.parcelas.codigo_venda == cod).select():
 			tbody_parcelas.append(
-				TR(	
+				TR(
 					TD(parcela['parcela'],_class="mod-p"),
 					TD(format_price(parcela['valor_parcela'])),
 					TD((parcela['data_vencimento']).strftime('%d/%m/%Y'))
 					)
-			)			
+			)
 			pass
-		table_pacelas.append(tbody_parcelas)	
+		table_pacelas.append(tbody_parcelas)
 		grid_price.append(table_pacelas)
 		pass
 
@@ -152,7 +152,7 @@ def HEADER():
 		H4(file_settings[1]),
 		H5(file_settings[3]),
 		H6(end)
-		)	
+		)
 	# site
 	site = 'www.minhaempresa.com'
 	logo = IMG(_width='100px', _src=URL('static','images/logo/logoPrint.png'))
@@ -176,7 +176,7 @@ def table_grid():
 	headers =["Código", "Cliente", "Representante","Valor Total","Data da venda","Status","Romaneio","Etiquetas"]
 	fields = ["codigo_venda", "nome_cliente", "nome_representante","valor_total","date_create","status_do_operacional","romaneio","etiquetas"]
 
-	# tabela vazia 
+	# tabela vazia
 	table = TABLE(_id="tableHistorico", _class="table table-hover table-condensed")
 
 	# thead vazio sendo populado pelo for
@@ -188,7 +188,7 @@ def table_grid():
 	# montando todos os rows da tabela product
 	rows = db(query).select()
 
-	# navegando em todos os rows e populando os tr com o retorno 
+	# navegando em todos os rows e populando os tr com o retorno
 	for row in rows:
 		tr = TR(_id=row['id'])
 		for field in fields:
@@ -209,7 +209,6 @@ def table_grid():
 def GERAR_ETIQUETAS(qtd,cliente_id):
 	# objeto cliente
 	cliente = db(db.registration.id == cliente_id).select()[0]
-	print cliente['name']
 	# as 2 rows da etiqueta
 	row_two_tags = []
 	tags = []
@@ -219,15 +218,15 @@ def GERAR_ETIQUETAS(qtd,cliente_id):
 		IMG(_src=URL('static','images/logo/logoPrint.png')),
 		XML(
 			'<address>' \
-			  '<strong>De: %s</strong><br>' \
+			  '<strong>REMETENTE:</strong> %s<br>' \
 			  '%s %s, %s<br>' \
 			  '%s, %s %s<br>' \
-			  '<abbr title="Phone">P:</abbr> %s<br>' \
+			  '<abbr title="Phone">P: </abbr> %s<br>' \
 			  '<strong>Site: </strong>%s - <strong>Email:</strong>' \
-			  '<a href="mailto:#">%s</a>' \
-			'</address>'%(file_settings[0],file_settings[8],file_settings[9],file_settings[7],file_settings[6],file_settings[5],file_settings[4],file_settings[2],file_settings[1],file_settings[3])
+			  '<a href="mailto:#"> %s</a>' \
+			'</address>'%(file_settings[0].upper(),file_settings[8],file_settings[9],file_settings[7],file_settings[6],file_settings[5],file_settings[4],file_settings[2],file_settings[1],file_settings[3])
 			),
-		_class="list-group-item grid_etiquetas_titulo")
+		_class="list-group-item grid_etiquetas_titulo remete")
 	row_two_tags.append(row_one) # add row one and row_two_tags
 
 	# row two tag
@@ -235,17 +234,17 @@ def GERAR_ETIQUETAS(qtd,cliente_id):
 		IMG(_src=URL('static','images/destinatario.png')),
 		XML(
 			'<address>' \
-			  '<strong>Para: %s</strong><br>' \
+			  '<strong>DESTINO:</strong> %s<br>' \
 			  '%s %s, %s<br>' \
-			  '%s, %s %s<br>' \
+			  '%s, %s %s ' \
 			  '<abbr title="Phone">P:</abbr> %s<br>' \
 			  '<strong>Email:</strong>' \
 			  '<a href="mailto:#">%s</a>' \
-			'</address>'%(cliente['name'],cliente['endereco'],cliente['numero'],cliente['bairro'],cliente['cidade'],cliente['uf'],cliente['cep'],cliente['fixo'],cliente['email'])
-			),		
-		_class="list-group-item grid_etiquetas_titulo")
+			'</address>'%(cliente['name'].upper(),cliente['endereco'],cliente['numero'],cliente['bairro'],cliente['cidade'],cliente['uf'],cliente['cep'],cliente['fixo'],cliente['email'])
+			),
+		_class="list-group-item grid_etiquetas_titulo destino")
 	row_two_tags.append(row_two) # add row two and row_two_tags
-	
+
 	# tags
 	for i in range(int(qtd)):
 		tags.append(
@@ -255,9 +254,9 @@ def GERAR_ETIQUETAS(qtd,cliente_id):
 					_class="list-group linha")
 
 				)
-			)	
+			)
 		pass
-	
+
 	# grid
 	grid_etiquetas = UL(
 		tags,

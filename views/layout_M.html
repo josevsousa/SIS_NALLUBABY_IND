@@ -63,7 +63,9 @@
       <meta name="msapplication-TileImage" content="{{=URL('static','images/faviconFull/ms-icon-144x144.png')}}">
       <meta name="theme-color" content="#ffffff">
 
-      {{block head}}{{end}}
+      {{block head}}
+
+      {{end}}
 
 
   </head>
@@ -72,9 +74,21 @@
             {{block header}}
                 <header data-role="header">
                     <h1>{{=(file_settings[0]).upper()}}</h1>
-                    <a href="login" class="ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all">No text</a>
+                    {{if auth.user != None:}}
+                        <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="on ui-btn ui-icon-lock  ui-btn-icon-notext ui-corner-all">Actions...</a>
+                        <div data-role="popup" id="popupMenu" data-theme="b">
+                            <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                                <li data-role="list-divider">Choose an action</li>
+                                <li><a href="#">Sair</a></li>
+                            </ul>
+                        </div>
+                    {{else:}}
+                        <a href="{{=URL('mobile','login')}}" class="off ui-btn ui-icon-user  ui-btn-icon-notext ui-corner-all"></a>
+                    {{pass}}
                 </header>
             {{end}}
+            <!-- {{#=auth.user}} -->
+
             <section data-role="content">{{block main}}{{end}}</session>
 
             {{block footer}}
@@ -82,7 +96,11 @@
                 <nav data-role="navbar">
                     <ul>
                         <li><a href="{{=URL('mobile','index.html')}}"  data-icon="home">Home</a></li>
-                        <li><a href="{{=URL('mobile','produtos.html')}}"  data-icon="grid" data-transition="flip">Produtos</a></li>
+                        {{if auth.user != None:}}
+                            <li><a href="{{=URL('mobile','produtos.html')}}"  data-icon="grid" data-transition="flip">Produtos</a></li>
+                        {{else:}}
+                            <li><a href="{{=URL('mobile','login.html')}}"  data-icon="grid" data-transition="flip">Produtos</a></li>
+                        {{pass}}
                     </ul>
                 </nav>
             </footer>

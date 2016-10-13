@@ -1,6 +1,7 @@
 {{extend "layout_1.html"}}
 
 
+
 {{block featured}}
 <div class="jumbotron">
 	<div class="container">
@@ -8,18 +9,25 @@
 		<h1>System de gestão Nallubaby</h1>
 		</div>
 	</div>
-</div>		
+</div>
 {{end}}
 
 {{block head}}
-    <!-- {{#include "function1.html"}} -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var x = window.screen.width;
+			if (x < 1026) {
+				$( location ).attr("href", 'mobile/index.html');
+			}
+		});
+	</script>
 {{end}}
 
 <!-- manda pra o include do layout_3 -->
 {{block main}}
 	<div class="container " id="tela_registro">
 
-			<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Selecione a função desejada</h2>	
+			<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Selecione a função desejada<span id="tt"></span></h2>
 		<div class="well center" id="registro_full">
 			<p>
 			  <a href="caixa/etapa_1" class="btn btn-success btn-lg">Caixa</a>
@@ -27,6 +35,6 @@
 			  <a href="registration/tela_registration" class="btn btn-warning btn-lg">Cadastros</a>
 			</p>
 
-		</div>	
+		</div>
 	</div>
 {{end}}
