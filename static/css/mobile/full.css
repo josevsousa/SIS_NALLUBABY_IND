@@ -6,8 +6,11 @@ img.destaque_img {
     border-radius: 9px;
     width: 100% !important;
 }
-small {
+/*small {
     color: #908E8E;
+}*/
+div#label_home{
+   background:transparent url('../../images/bg.png') top no-repeat }
 }
 .price {
     color: #0BBCC7;
@@ -18,7 +21,7 @@ small {
 }
 .home_img_logo {
     border-radius: 50%;
-    border: 9px solid #EEEFEC;
+    border: 9px solid #DDF5DD;
 }
 .on{
     background-color: #53FF2E !important;

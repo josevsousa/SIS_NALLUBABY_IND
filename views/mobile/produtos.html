@@ -6,7 +6,7 @@
 
 {{block main}}
         <!-- ul produtos -->
-        <ul data-role="listview" data-inset="true" data-autodividers="true" data-filter="true" data-filter-placeholder="Search fruits...">
+        <ul data-role="listview" data-inset="true" data-autodividers="true" data-filter="true" data-filter-placeholder="Buscar...">
             {{for row in rows:}}
             <li><a href="{{=URL('mobile','produto_destaque', args=[row['id']])}}"  data-transition="slide">
                 {{if row['thumbnail']:}}

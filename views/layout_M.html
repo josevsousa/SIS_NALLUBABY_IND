@@ -34,6 +34,9 @@
       {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
       <!-- css -->
       <link rel="stylesheet" href="{{=URL('static','jquery.mobile/jquery.mobile-1.4.5.css')}}" media="screen" title="no title">
+
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/themes/themeNallubaby.css')}}" media="screen" title="no title">
+      <link rel="stylesheet" href="{{=URL('static','jquery.mobile/themes/jquery.mobile.icons.min.css')}}" media="screen" title="no title">
       <!-- <link rel="stylesheet" href="http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.css"> -->
       <link rel="stylesheet" href="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.css')}}">
       <link rel="stylesheet" href="{{=URL('static','jquery.mobile/demos/datepicker/jquery.mobile.datepicker.theme.css')}}">
@@ -70,10 +73,16 @@
 
   </head>
     <body>
-        <div data-role="page" >
+        <div data-role="page" data-theme="a" id="label_home">
             {{block header}}
                 <header data-role="header">
                     <h1>{{=(file_settings[0]).upper()}}</h1>
+                    <nav data-role="navbar" data-position="fixed">
+                        <ul>
+                            <li><a href="{{=URL('mobile','index.html')}}"  data-icon="home">Home</a></li>
+                            <li><a href="{{=URL('mobile','produtos.html')}}"  data-icon="grid" data-transition="flip">Produtos</a></li>
+                        </ul>
+                    </nav>
                         <!-- <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="on ui-btn ui-icon-lock  ui-btn-icon-notext ui-corner-all">Actions...</a> -->
                 </header>
             {{end}}
@@ -83,12 +92,7 @@
 
             {{block footer}}
             <footer data-position="fixed" data-role="footer" class="nav-glyphish-example">
-                <nav data-role="navbar">
-                    <ul>
-                        <li><a href="{{=URL('mobile','index.html')}}"  data-icon="home">Home</a></li>
-                            <li><a href="{{=URL('mobile','produtos.html')}}"  data-icon="grid" data-transition="flip">Produtos</a></li>
-                    </ul>
-                </nav>
+                <small class="ui-bar">Seja bem vindo!</small>
             </footer>
             {{end}}
         </div>
