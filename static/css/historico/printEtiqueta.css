@@ -10,10 +10,45 @@
         body, html{
             margin: 0mm !important;
         }
+        #grid_etiquetas {
+            font-weight: bold;
+            color: black;
+            font-family: sans-serif;
+        }
+        p {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #0000CC;
+}
+h2 {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color: #FF0000;
+}
+h5 {
+color: #FFCC33;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+color: #FF9900;
+}
+a:visited {
+color: #FF9A00;
+}
+a:hover {
+color: #FF9A00;
+}
+a:active {
+color: #FF9A00;
+}
     }
 body {
     padding: 10px !important;
     margin-bottom: 60px;
+}
+#grid_etiquetas {
+    list-style: none;
+    padding: 0px;
+    font-size: 12px;
 }
 .menu_etiqueta {
     background: #F8F5F0;
@@ -36,11 +71,7 @@ div#load_etiqueta h2 {
 .menu_etiqueta span {
     font-size: large;
 }
-#grid_etiquetas {
-    list-style: none;
-    padding: 0px;
-    font-size: 12px;
-}
+
 #grid_etiquetas>li ul {
     width: 100% !important;
     float: left;

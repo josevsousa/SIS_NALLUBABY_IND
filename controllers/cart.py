@@ -9,7 +9,7 @@ def show():
 	headers = ["Img","Name","Price","Qtd","Total","Remove"]
 	fields = ["thumbnail", "name", "price", "qtd", "total", "remove"]
 
-	# tabela vazia 
+	# tabela vazia
 	table = TABLE()
 
 	# thead vazio sendo populado pelo for
@@ -17,8 +17,8 @@ def show():
 	for header in headers:
 		thead[0].append(TD(B(header)))
 	table.append(thead)
-	
-	# navegando na session.cart 
+
+	# navegando na session.cart
 	for item in session.cart:
 		tr = TR(_id=item['id']) #para cada linha da tabela tera o id do produto
 		for field in fields:
@@ -30,7 +30,7 @@ def show():
 				else:
 					img = IMG( _widht=32, _height=32 ,_src=URL('home','download', args=item['thumbnail']))
 				tr.append(img)
-			elif field == "remove": #field = botao_remove	
+			elif field == "remove": #field = botao_remove
 				a = A(SPAN(_class="glyphicon glyphicon-trash"),
 				_class="btn btn-danger btn-xs removebutton",
 				_data=item['id']) #chama a funão pra excluir o item da lista da session.cart
@@ -42,10 +42,10 @@ def show():
 				tr.append(item[field])
 
 		table.append(tr)
-	
+
 	# add class a tabela
 	table["_class"] = "table table-striped table-bordered table=condensed list"
-	
+
 	# somar o preço de todos os totais de cada row
 	total = sum(item['total'] for item in session.cart)
 	total = format_price(total)
@@ -57,7 +57,7 @@ def remove():
 	newcart = []
 	valorDesconto = 0.0 #valor do iten a ser retirado da lista
 	total = sum(item['total'] for item in session.cart) #soma do valor total antes da retirada do item
-	
+
 
 	for item in session.cart:
 		if int(item['id']) != int(pid):
@@ -65,15 +65,12 @@ def remove():
 		else:
 			valorDesconto = item['total'] #guarda o valor unit_price do item a ser deletado da lista pra ser descontado do total
 
-	session.cart = newcart		
+	session.cart = newcart
 
 
 	subTotal = "%.2f"%((float(total) - float(valorDesconto))) #total - valorDesconto "valor guardado antes de ser deletado da lista"
 
-	return "$('#%s').remove();$('#total h3').text('TOTAL:R$%s')"%(pid,subTotal.replace(".",",")) 
-
-
-		
+	return "$('#%s').remove();$('#total h3').text('TOTAL:R$%s')"%(pid,subTotal.replace(".",","))
 
 def clear():
 	# limpar carrinho

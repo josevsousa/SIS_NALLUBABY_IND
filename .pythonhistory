@@ -907,3 +907,29 @@ file = file.readlines()
 file
 file[0]
 file[0].upper()
+print db
+query = db(db.registration).select()
+print query
+print query[0]
+query = db(db.registration.status == 'Cliente').select()
+print query[0]
+print query
+for cliente in query:
+    print cliente
+for cliente in query:
+    print cliente['nome']
+for cliente in query:
+    print cliente[0]['nome']
+for cliente in query:
+    print cliente
+for cliente in query:
+    print cliente.code
+for cliente in query:
+    print cliente.status
+for cliente in query:
+    print cliente.status
+print query[0].name
+print query[0].cel
+print query[0].cel[0]
+print query[0].cel
+quit()

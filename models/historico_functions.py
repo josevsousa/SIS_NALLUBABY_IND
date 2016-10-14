@@ -221,7 +221,7 @@ def GERAR_ETIQUETAS(qtd,cliente_id):
 			  '<strong>REMETENTE:</strong> %s<br>' \
 			  '%s %s, %s<br>' \
 			  '%s, %s %s<br>' \
-			  '<abbr title="Phone">P: </abbr> %s<br>' \
+			  '<abbr>P: </abbr> %s<br>' \
 			  '<strong>Site: </strong>%s - <strong>Email:</strong>' \
 			  '<a href="mailto:#"> %s</a>' \
 			'</address>'%(file_settings[0].upper(),file_settings[8],file_settings[9],file_settings[7],file_settings[6],file_settings[5],file_settings[4],file_settings[2],file_settings[1],file_settings[3])
@@ -240,7 +240,7 @@ def GERAR_ETIQUETAS(qtd,cliente_id):
 			  '<abbr title="Phone">P:</abbr> %s<br>' \
 			  '<strong>Email:</strong>' \
 			  '<a href="mailto:#">%s</a>' \
-			'</address>'%(cliente['name'].upper(),cliente['endereco'],cliente['numero'],cliente['bairro'],cliente['cidade'],cliente['uf'],cliente['cep'],cliente['fixo'],cliente['email'])
+			'</address>'%(cliente['name'].upper(),cliente['endereco'],cliente['numero'],cliente['bairro'],cliente['cidade'],cliente['uf'],cliente['cep'],cliente['cel'][0],cliente['email'])
 			),
 		_class="list-group-item grid_etiquetas_titulo destino")
 	row_two_tags.append(row_two) # add row two and row_two_tags
